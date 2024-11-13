@@ -394,10 +394,22 @@ document.addEventListener("nav", async (e: CustomEventMap["nav"]) => {
     preview.replaceChildren(previewInner)
 
     // scroll to longest
-    const highlights = [...preview.querySelectorAll(".highlight")]
-      .filter((highlight) => !highlight.closest(".katex, .katex-mathml"))
-      .sort((a, b) => b.innerHTML.length - a.innerHTML.length)
-    highlights[0]?.scrollIntoView({ block: "start" })
+    const highlights = [...preview.querySelectorAll(".highlight")].sort(
+      (a, b) => b.innerHTML.length - a.innerHTML.length,
+    )
+    if (highlights.length > 0) {
+      const highlight = highlights[0]
+      const container = preview
+      if (container && highlight) {
+        const containerRect = container.getBoundingClientRect()
+        const highlightRect = highlight.getBoundingClientRect()
+
+        // Calculate the scroll position relative to the container
+        const relativeTop = highlightRect.top - containerRect.top + container.scrollTop
+        container.scrollTo({ top: relativeTop, behavior: "smooth" })
+      }
+    }
+
   }
 
   async function onType(e: HTMLElementEventMap["input"]) {

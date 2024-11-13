@@ -394,9 +394,9 @@ document.addEventListener("nav", async (e: CustomEventMap["nav"]) => {
     preview.replaceChildren(previewInner)
 
     // scroll to longest
-    const highlights = [...preview.querySelectorAll(".highlight")].sort(
-      (a, b) => b.innerHTML.length - a.innerHTML.length,
-    )
+    const highlights = [...preview.querySelectorAll(".highlight")]
+      .filter((highlight) => !highlight.closest(".katex, .katex-mathml"))
+      .sort((a, b) => b.innerHTML.length - a.innerHTML.length)
     highlights[0]?.scrollIntoView({ block: "start" })
   }
 

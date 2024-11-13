@@ -409,7 +409,6 @@ document.addEventListener("nav", async (e: CustomEventMap["nav"]) => {
         container.scrollTo({ top: relativeTop, behavior: "smooth" })
       }
     }
-
   }
 
   async function onType(e: HTMLElementEventMap["input"]) {

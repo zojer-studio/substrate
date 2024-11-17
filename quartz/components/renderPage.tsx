@@ -58,17 +58,11 @@ export function pageResources(
   }
 }
 
-export function renderPage(
-  cfg: GlobalConfiguration,
-  slug: FullSlug,
-  componentData: QuartzComponentProps,
-  components: RenderComponents,
-  pageResources: StaticResources,
-): string {
-  // make a deep copy of the tree so we don't remove the transclusion references
-  // for the file cached in contentMap in build.ts
-  const root = clone(componentData.tree) as Root
-
+export function transcludeFinal(
+  root: Root,
+  { cfg, fileData, allFiles }: QuartzComponentProps,
+): Root {
+  const slug = fileData.slug!
   // process transcludes in componentData
   visit(root, "element", (node, _index, _parent) => {
     if (node.tagName === "blockquote") {
@@ -76,7 +70,7 @@ export function renderPage(
       if (classNames.includes("transclude")) {
         const inner = node.children[0] as Element
         const transcludeTarget = inner.properties["data-slug"] as FullSlug
-        const page = componentData.allFiles.find((f) => f.slug === transcludeTarget)
+        const page = allFiles.find((f) => f.slug === transcludeTarget)
         if (!page) {
           return
         }
@@ -119,7 +113,7 @@ export function renderPage(
             if (!(el.type === "element" && el.tagName.match(headerRegex))) continue
             const depth = Number(el.tagName.substring(1))
 
-            // lookin for our blockref
+            // looking for our blockref
             if (startIdx === undefined || startDepth === undefined) {
               // skip until we find the blockref that matches
               if (el.properties?.id === blockRef) {
@@ -184,9 +178,20 @@ export function renderPage(
       }
     }
   })
+  return root
+}
 
-  // set componentData.tree to the edited html that has transclusions rendered
-  componentData.tree = root
+export function renderPage(
+  cfg: GlobalConfiguration,
+  slug: FullSlug,
+  componentData: QuartzComponentProps,
+  components: RenderComponents,
+  pageResources: StaticResources,
+): string {
+  // make a deep copy of the tree so we don't remove the transclusion references
+  // for the file cached in contentMap in build.ts
+  // then set componentData.tree to the edited html that has transclusions rendered
+  componentData.tree = transcludeFinal(clone(componentData.tree) as Root, componentData)
 
   const {
     head: Head,

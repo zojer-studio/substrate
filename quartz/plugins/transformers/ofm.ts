@@ -664,6 +664,64 @@ export const ObsidianFlavoredMarkdown: QuartzTransformerPlugin<Partial<Options>>
         })
       }
 
+      if (opts.highlight) {
+        plugins.push(() => {
+          return (tree: HtmlRoot) => {
+            visit(tree, "element", (node) => {
+              if (node.tagName === "p") {
+                const stack: number[] = []
+                const highlights: [number, number][] = []
+                const children = [...node.children]
+
+                for (let i = 0; i < children.length; i++) {
+                  const child = children[i]
+                  if (child.type === "text" && child.value.includes("==")) {
+                    // Split text node if it contains == marker
+                    const parts = child.value.split("==")
+
+                    if (parts.length > 1) {
+                      // Replace original node with split parts
+                      const newNodes: (typeof child)[] = []
+
+                      parts.forEach((part, idx) => {
+                        if (part) {
+                          newNodes.push({ type: "text", value: part })
+                        }
+                        // Add marker position except for last part
+                        if (idx < parts.length - 1) {
+                          if (stack.length === 0) {
+                            stack.push(i + newNodes.length)
+                          } else {
+                            const start = stack.pop()!
+                            highlights.push([start, i + newNodes.length])
+                          }
+                        }
+                      })
+
+                      children.splice(i, 1, ...newNodes)
+                      i += newNodes.length - 1
+                    }
+                  }
+                }
+
+                // Apply highlights in reverse to maintain indices
+                for (const [start, end] of highlights.reverse()) {
+                  const highlightSpan: Element = {
+                    type: "element",
+                    tagName: "span",
+                    properties: { className: ["text-highlight"] },
+                    children: children.slice(start, end + 1),
+                  }
+                  children.splice(start, end - start + 1, highlightSpan)
+                }
+
+                node.children = children
+              }
+            })
+          }
+        })
+      }
+
       if (opts.mermaid) {
         plugins.push(() => {
           return (tree: HtmlRoot, _file) => {

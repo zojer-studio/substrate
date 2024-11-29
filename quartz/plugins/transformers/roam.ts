@@ -93,7 +93,7 @@ function transformSpecialEmbed(node: Paragraph, opts: Options): Html | null {
 
         return {
           type: "html",
-          value: `<iframe 
+          value: `<iframe
             class="external-embed youtube"
             width="600px"
             height="350px"
@@ -164,7 +164,7 @@ export const RoamFlavoredMarkdown: QuartzTransformerPlugin<Partial<Options> | un
             roamHighlightRegex,
             (_value: string, inner: string) => ({
               type: "html",
-              value: `<span class="text-highlight">${inner}</span>`,
+              value: `<mark>${inner}</mark>`,
             }),
           ])
 

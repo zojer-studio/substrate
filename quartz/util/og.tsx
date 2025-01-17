@@ -36,7 +36,7 @@ async function fetchTtf(fontName: string, weight: FontWeight): Promise<ArrayBuff
   try {
     // Get css file from google fonts
     const cssResponse = await fetch(
-      `https://fonts.googleapis.com/css2?family=${fontName}:wght@${weight}`,
+      `https://fonts.googleapis.com/css2?family=${fontName.replace(" ", "+")}:wght@${weight}`,
     )
     const css = await cssResponse.text()
 

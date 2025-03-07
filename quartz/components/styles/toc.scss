@@ -61,10 +61,6 @@ button#toc {
     visibility: hidden;
   }
 
-  &.collapsed > .overflow::after {
-    opacity: 0;
-  }
-
   & ul {
     list-style: none;
     margin: 0.5rem 0;
@@ -79,10 +75,6 @@ button#toc {
         opacity: 0.75;
       }
     }
-  }
-  > ul.overflow {
-    max-height: none;
-    width: 100%;
   }
 
   @for $i from 0 through 6 {

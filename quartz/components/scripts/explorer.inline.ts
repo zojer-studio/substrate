@@ -81,6 +81,11 @@ function createFileNode(currentSlug: FullSlug, node: FileTrieNode): HTMLLIElemen
   a.href = resolveRelative(currentSlug, node.data?.slug!)
   a.dataset.for = node.data?.slug
   a.textContent = node.displayName
+
+  if (currentSlug === node.data?.slug) {
+    a.classList.add("active")
+  }
+
   return li
 }
 

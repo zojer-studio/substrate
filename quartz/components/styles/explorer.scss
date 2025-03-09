@@ -62,33 +62,41 @@
       display: flex;
     }
   }
-}
 
-button#mobile-explorer,
-button#desktop-explorer {
-  background-color: transparent;
-  border: none;
-  text-align: left;
-  cursor: pointer;
-  padding: 0;
-  color: var(--dark);
-  display: flex;
-  align-items: center;
+  button#mobile-explorer,
+  button#desktop-explorer {
+    background-color: transparent;
+    border: none;
+    text-align: left;
+    cursor: pointer;
+    padding: 0;
+    color: var(--dark);
+    display: flex;
+    align-items: center;
 
-  & h2 {
-    font-size: 1rem;
-    display: inline-block;
-    margin: 0;
+    & h2 {
+      font-size: 1rem;
+      display: inline-block;
+      margin: 0;
+    }
+
+    & .fold {
+      margin-left: 0.5rem;
+      transition: transform 0.3s ease;
+      opacity: 0.8;
+    }
+
+    .explorer.collapsed > & .fold {
+      transform: rotateZ(-90deg);
+    }
   }
 
-  & .fold {
-    margin-left: 0.5rem;
-    transition: transform 0.3s ease;
-    opacity: 0.8;
-  }
+  svg {
+    pointer-events: all;
 
-  .explorer.collapsed > & .fold {
-    transform: rotateZ(-90deg);
+    & > polyline {
+      pointer-events: none;
+    }
   }
 }
 
@@ -96,13 +104,10 @@ button#desktop-explorer {
   list-style: none;
   overflow: hidden;
   overflow-y: auto;
-  max-height: 100%;
-  transition: max-height 0.35s ease;
   margin-top: 0.5rem;
 
-  .explorer.collapsed > & {
+  .explorer.collapsed > & > ul.overflow {
     max-height: 0px;
-    transition: max-height 0.35s ease;
   }
 
   & ul {
@@ -111,18 +116,18 @@ button#desktop-explorer {
     padding: 0;
     transition:
       max-height 0.35s ease,
-      transform 0.35s ease,
-      opacity 0.2s ease;
+      transform 0.35s ease;
 
     & li > a {
       color: var(--dark);
       opacity: 0.75;
       pointer-events: all;
-    }
-  }
 
-  > #explorer-ul {
-    max-height: none;
+      &.active {
+        opacity: 1;
+        color: var(--tertiary);
+      }
+    }
   }
 
   .folder-outer {
@@ -140,14 +145,6 @@ button#desktop-explorer {
     margin-left: 6px;
     padding-left: 0.8rem;
     border-left: 1px solid var(--lightgray);
-  }
-}
-
-svg {
-  pointer-events: all;
-
-  & > polyline {
-    pointer-events: none;
   }
 }
 

@@ -167,6 +167,9 @@ You can also add the equivalent of a `beforeunload` event for [[SPA Routing]] vi
 document.addEventListener("prenav", () => {
   // executed after an SPA navigation is triggered but
   // before the page is replaced
+  // one usage pattern is to store things in sessionStorage
+  // in the prenav and then conditionally load then in the consequent
+  // nav
 })
 ```
 

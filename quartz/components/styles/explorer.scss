@@ -30,6 +30,10 @@
   display: flex;
   flex-direction: column;
   overflow-y: hidden;
+  flex: 0 1 auto;
+  &.collapsed {
+    flex: 0 1 1.2em;
+  }
 
   @media all and ($mobile) {
     order: -1;
@@ -63,40 +67,41 @@
     }
   }
 
-  button#mobile-explorer,
-  button#desktop-explorer {
-    background-color: transparent;
-    border: none;
-    text-align: left;
-    cursor: pointer;
-    padding: 0;
-    color: var(--dark);
-    display: flex;
-    align-items: center;
-
-    & h2 {
-      font-size: 1rem;
-      display: inline-block;
-      margin: 0;
-    }
-
-    & .fold {
-      margin-left: 0.5rem;
-      transition: transform 0.3s ease;
-      opacity: 0.8;
-    }
-
-    .explorer.collapsed > & .fold {
-      transform: rotateZ(-90deg);
-    }
-  }
-
   svg {
     pointer-events: all;
+    transition: transform 0.35s ease;
 
     & > polyline {
       pointer-events: none;
     }
+  }
+}
+
+button#mobile-explorer,
+button#desktop-explorer {
+  background-color: transparent;
+  border: none;
+  text-align: left;
+  cursor: pointer;
+  padding: 0;
+  color: var(--dark);
+  display: flex;
+  align-items: center;
+
+  & h2 {
+    font-size: 1rem;
+    display: inline-block;
+    margin: 0;
+  }
+
+  & .fold {
+    margin-left: 0.5rem;
+    transition: transform 0.3s ease;
+    opacity: 0.8;
+  }
+
+  .explorer.collapsed > & .fold {
+    transform: rotateZ(-90deg);
   }
 }
 
@@ -106,17 +111,10 @@
   overflow-y: auto;
   margin-top: 0.5rem;
 
-  .explorer.collapsed > & > ul.overflow {
-    max-height: 0px;
-  }
-
   & ul {
     list-style: none;
     margin: 0.08rem 0;
     padding: 0;
-    transition:
-      max-height 0.35s ease,
-      transform 0.35s ease;
 
     & li > a {
       color: var(--dark);

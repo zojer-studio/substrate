@@ -4,8 +4,10 @@
   display: flex;
   flex-direction: column;
 
-  &.desktop-only {
-    max-height: 40%;
+  overflow-y: hidden;
+  flex: 0 1 auto;
+  &:has(button#toc.collapsed) {
+    flex: 0 1 1.2rem;
   }
 }
 
@@ -44,22 +46,7 @@ button#toc {
 
 #toc-content {
   list-style: none;
-  overflow: hidden;
-  overflow-y: auto;
-  max-height: 100%;
-  transition:
-    max-height 0.35s ease,
-    visibility 0s linear 0s;
   position: relative;
-  visibility: visible;
-
-  &.collapsed {
-    max-height: 0;
-    transition:
-      max-height 0.35s ease,
-      visibility 0s linear 0.35s;
-    visibility: hidden;
-  }
 
   & ul {
     list-style: none;

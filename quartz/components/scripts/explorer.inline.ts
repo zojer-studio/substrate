@@ -259,14 +259,17 @@ document.addEventListener("prenav", async (e: CustomEventMap["prenav"]) => {
 
 document.addEventListener("nav", async (e: CustomEventMap["nav"]) => {
   const currentSlug = e.detail.url
-  // collapse explorer on mobile
-  for (const explorer of document.querySelectorAll(".explorer")) {
-    explorer.classList.add("collapsed")
-    explorer.setAttribute("aria-expanded", "false")
-  }
   await setupExplorer(currentSlug)
 
-  // Hide explorer on mobile until it is requested
+  // if mobile hamburger is visible, collapse by default
+  const mobileExplorer = document.getElementById("mobile-explorer")
+  if (mobileExplorer && mobileExplorer.checkVisibility()) {
+    for (const explorer of document.querySelectorAll(".explorer")) {
+      explorer.classList.add("collapsed")
+      explorer.setAttribute("aria-expanded", "false")
+    }
+  }
+
   const hiddenUntilDoneLoading = document.querySelector("#mobile-explorer")
   hiddenUntilDoneLoading?.classList.remove("hide-until-loaded")
 })

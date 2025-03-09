@@ -74,7 +74,7 @@ export default ((userOpts?: Partial<Options>) => {
         <button
           type="button"
           id="mobile-explorer"
-          class="collapsed hide-until-loaded explorer-toggle"
+          class="explorer-toggle hide-until-loaded"
           data-mobile={true}
           aria-controls="explorer-content"
         >

@@ -193,6 +193,12 @@ async function setupExplorer(currentSlug: FullSlug) {
     }
     explorerUl.insertBefore(fragment, explorerUl.firstChild)
 
+    // restore explorer scrollTop position if it exists
+    const scrollTop = sessionStorage.getItem("explorerScrollTop")
+    if (scrollTop) {
+      explorerUl.scrollTop = parseInt(scrollTop)
+    }
+
     // Set up event handlers
     const explorerButtons = explorer.querySelectorAll(
       "button.explorer-toggle",
@@ -224,6 +230,13 @@ async function setupExplorer(currentSlug: FullSlug) {
     }
   }
 }
+
+document.addEventListener("prenav", async (e: CustomEventMap["prenav"]) => {
+  // save explorer scrollTop position
+  const explorer = document.getElementById("explorer-ul")
+  if (!explorer) return
+  sessionStorage.setItem("explorerScrollTop", explorer.scrollTop.toString())
+})
 
 document.addEventListener("nav", async (e: CustomEventMap["nav"]) => {
   const currentSlug = e.detail.url

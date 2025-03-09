@@ -17,7 +17,6 @@ document.addEventListener("nav", (e) => {
   const observer = new IntersectionObserver((entries) => {
     for (const entry of entries) {
       const parentUl = entry.target.parentElement
-      console.log(parentUl)
       if (entry.isIntersecting) {
         parentUl.classList.remove("gradient-active")
       } else {

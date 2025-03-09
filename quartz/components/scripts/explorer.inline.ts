@@ -259,9 +259,10 @@ document.addEventListener("prenav", async (e: CustomEventMap["prenav"]) => {
 
 document.addEventListener("nav", async (e: CustomEventMap["nav"]) => {
   const currentSlug = e.detail.url
-  const mobileExplorer = document.querySelector("#mobile-explorer")
-  if (mobileExplorer) {
-    mobileExplorer.classList.add("collapsed")
+  // collapse explorer on mobile
+  for (const explorer of document.querySelectorAll(".explorer")) {
+    explorer.classList.add("collapsed")
+    explorer.setAttribute("aria-expanded", "false")
   }
   await setupExplorer(currentSlug)
 

@@ -105,9 +105,8 @@ export class FileTrieNode<T extends FileTrieData = ContentDetails> {
       const segments = [currentPath, node.slugSegment]
       const fullPath = joinSegments(...segments) as FullSlug
 
-      const indexQualifiedPath = node.isFolder && node.depth > 0 ?
-        joinSegments(fullPath, "index") as FullSlug :
-        fullPath
+      const indexQualifiedPath =
+        node.isFolder && node.depth > 0 ? (joinSegments(fullPath, "index") as FullSlug) : fullPath
 
       const result: [FullSlug, FileTrieNode<T>][] = [[indexQualifiedPath, node]]
 

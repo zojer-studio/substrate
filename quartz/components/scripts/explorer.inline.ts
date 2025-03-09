@@ -1,5 +1,5 @@
 import { FileTrieNode } from "../../util/fileTrie"
-import { FullSlug, resolveRelative } from "../../util/path"
+import { FullSlug, resolveRelative, simplifySlug } from "../../util/path"
 import { ContentDetails } from "../../plugins/emitters/contentIndex"
 
 type MaybeHTMLElement = HTMLElement | undefined
@@ -119,10 +119,18 @@ function createFolderNode(
     span.textContent = node.displayName
   }
 
+  // if the saved state is collapsed or the default state is collapsed
   const isCollapsed =
     currentExplorerState.find((item) => item.path === folderPath)?.collapsed ??
     opts.folderDefaultState === "collapsed"
-  if (!isCollapsed) {
+
+  // if this folder is a prefix of the current path we
+  // want to open it anyways
+  const simpleFolderPath = simplifySlug(folderPath)
+  const folderIsPrefixOfCurrentSlug =
+    simpleFolderPath === currentSlug.slice(0, simpleFolderPath.length)
+
+  if (!isCollapsed || folderIsPrefixOfCurrentSlug) {
     folderOuter.classList.add("open")
   }
 
@@ -202,6 +210,12 @@ async function setupExplorer(currentSlug: FullSlug) {
     const scrollTop = sessionStorage.getItem("explorerScrollTop")
     if (scrollTop) {
       explorerUl.scrollTop = parseInt(scrollTop)
+    } else {
+      // try to scroll to the active element if it exists
+      const activeElement = explorerUl.querySelector(".active")
+      if (activeElement) {
+        activeElement.scrollIntoView({ behavior: "smooth" })
+      }
     }
 
     // Set up event handlers

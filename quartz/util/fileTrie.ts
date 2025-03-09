@@ -103,12 +103,14 @@ export class FileTrieNode<T extends FileTrieData = ContentDetails> {
       currentPath: string,
     ): [FullSlug, FileTrieNode<T>][] => {
       const segments = [currentPath, node.slugSegment]
-      if (node.isFolder && node.depth > 0) {
-        segments.push("index")
-      }
-
       const fullPath = joinSegments(...segments) as FullSlug
-      const result: [FullSlug, FileTrieNode<T>][] = [[fullPath, node]]
+
+      const indexQualifiedPath = node.isFolder && node.depth > 0 ?
+        joinSegments(fullPath, "index") as FullSlug :
+        fullPath
+
+      const result: [FullSlug, FileTrieNode<T>][] = [[indexQualifiedPath, node]]
+
       return result.concat(...node.children.map((child) => traverse(child, fullPath)))
     }
 

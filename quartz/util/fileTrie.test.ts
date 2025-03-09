@@ -127,19 +127,20 @@ describe("FileTrie", () => {
   describe("entries", () => {
     test("should return all entries", () => {
       const data1 = { title: "Test1", slug: "test1" }
-      const data2 = { title: "Test2", slug: "test2" }
+      const data2 = { title: "Test2", slug: "a/b/test2" }
 
       trie.add(data1)
       trie.add(data2)
 
       const entries = trie.entries()
-      assert.strictEqual(entries.length, 3)
       assert.deepStrictEqual(
         entries.map(([path, node]) => [path, node.data]),
         [
           ["", trie.data],
-          ["test1/index", data1],
-          ["test2/index", data2],
+          ["test1", data1],
+          ["a/index", null],
+          ["a/b/index", null],
+          ["a/b/test2", data2],
         ],
       )
     })
@@ -165,7 +166,7 @@ describe("FileTrie", () => {
       trie.add(data3)
       const paths = trie.getFolderPaths()
 
-      assert.deepStrictEqual(paths, ["folder", "folder/subfolder", "abc"])
+      assert.deepStrictEqual(paths, ["folder/index", "folder/subfolder/index", "abc/index"])
     })
   })
 

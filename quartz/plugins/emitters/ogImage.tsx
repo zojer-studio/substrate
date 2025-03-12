@@ -1,7 +1,7 @@
 import { QuartzEmitterPlugin } from "../types"
 import { i18n } from "../../i18n"
 import { unescapeHTML } from "../../util/escape"
-import { FilePath, FullSlug, getFileExtension } from "../../util/path"
+import { FullSlug, getFileExtension } from "../../util/path"
 import { ImageOptions, SocialImageOptions, defaultImage, getSatoriFont } from "../../util/og"
 import { getFontSpecificationName } from "../../util/theme"
 import sharp from "sharp"
@@ -52,10 +52,8 @@ export const CustomOgImages: QuartzEmitterPlugin<Partial<SocialImageOptions>> = 
     getQuartzComponents() {
       return []
     },
-    async emit(ctx, content, _resources) {
+    async *emit(ctx, content, _resources) {
       const cfg = ctx.cfg.configuration
-      const emittedFiles: FilePath[] = []
-
       const headerFont = getFontSpecificationName(cfg.theme.typography.header)
       const bodyFont = getFontSpecificationName(cfg.theme.typography.body)
       const fonts = await getSatoriFont(headerFont, bodyFont)
@@ -88,17 +86,13 @@ export const CustomOgImages: QuartzEmitterPlugin<Partial<SocialImageOptions>> = 
           fullOptions,
         )
 
-        const fp = await write({
+        yield write({
           ctx,
           content: stream,
           slug: `${slug}-og-image` as FullSlug,
           ext: ".webp",
         })
-
-        emittedFiles.push(fp)
       }
-
-      return emittedFiles
     },
     externalResources: (ctx) => {
       if (!ctx.cfg.configuration.baseUrl) {
@@ -115,7 +109,6 @@ export const CustomOgImages: QuartzEmitterPlugin<Partial<SocialImageOptions>> = 
               ? `https://${baseUrl}/${pageData.slug!}-og-image.webp`
               : undefined
             const defaultOgImagePath = `https://${baseUrl}/static/og-image.png`
-
             const ogImagePath = userDefinedOgImagePath ?? generatedOgImagePath ?? defaultOgImagePath
 
             const ogImageMimeType = `image/${getFileExtension(ogImagePath) ?? "png"}`

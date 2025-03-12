@@ -15,8 +15,10 @@ export async function getSatoriFont(headerFontName: string, bodyFontName: string
   const bodyWeight = 400 as FontWeight
 
   // Fetch fonts
-  const headerFont = await fetchTtf(headerFontName, headerWeight)
-  const bodyFont = await fetchTtf(bodyFontName, bodyWeight)
+  const [headerFont, bodyFont] = await Promise.all([
+    fetchTtf(headerFontName, headerWeight),
+    fetchTtf(bodyFontName, bodyWeight),
+  ])
 
   // Convert fonts to satori font format and return
   const fonts: SatoriOptions["fonts"] = [
@@ -26,38 +28,48 @@ export async function getSatoriFont(headerFontName: string, bodyFontName: string
   return fonts
 }
 
+// Cache for memoizing font data
+const fontCache = new Map<string, Promise<ArrayBuffer>>()
+
 /**
  * Get the `.ttf` file of a google font
  * @param fontName name of google font
  * @param weight what font weight to fetch font
  * @returns `.ttf` file of google font
  */
-async function fetchTtf(fontName: string, weight: FontWeight): Promise<ArrayBuffer> {
-  try {
-    // Get css file from google fonts
-    const cssResponse = await fetch(
-      `https://fonts.googleapis.com/css2?family=${fontName}:wght@${weight}`,
-    )
-    const css = await cssResponse.text()
-
-    // Extract .ttf url from css file
-    const urlRegex = /url\((https:\/\/fonts.gstatic.com\/s\/.*?.ttf)\)/g
-    const match = urlRegex.exec(css)
-
-    if (!match) {
-      throw new Error("Could not fetch font")
-    }
-
-    // Retrieve font data as ArrayBuffer
-    const fontResponse = await fetch(match[1])
-
-    // fontData is an ArrayBuffer containing the .ttf file data (get match[1] due to google fonts response format, always contains link twice, but second entry is the "raw" link)
-    const fontData = await fontResponse.arrayBuffer()
-
-    return fontData
-  } catch (error) {
-    throw new Error(`Error fetching font: ${error}`)
+export async function fetchTtf(fontName: string, weight: FontWeight): Promise<ArrayBuffer> {
+  const cacheKey = `${fontName}-${weight}`
+  if (fontCache.has(cacheKey)) {
+    return fontCache.get(cacheKey)!
   }
+
+  // If not in cache, fetch and store the promise
+  const fontPromise = (async () => {
+    try {
+      // Get css file from google fonts
+      const cssResponse = await fetch(
+        `https://fonts.googleapis.com/css2?family=${fontName}:wght@${weight}`,
+      )
+      const css = await cssResponse.text()
+
+      // Extract .ttf url from css file
+      const urlRegex = /url\((https:\/\/fonts.gstatic.com\/s\/.*?.ttf)\)/g
+      const match = urlRegex.exec(css)
+
+      if (!match) {
+        throw new Error("Could not fetch font")
+      }
+
+      // fontData is an ArrayBuffer containing the .ttf file data (get match[1] due to google fonts response format, always contains link twice, but second entry is the "raw" link)
+      const fontResponse = await fetch(match[1])
+      return await fontResponse.arrayBuffer()
+    } catch (error) {
+      throw new Error(`Error fetching font: ${error}`)
+    }
+  })()
+
+  fontCache.set(cacheKey, fontPromise)
+  return fontPromise
 }
 
 export type SocialImageOptions = {

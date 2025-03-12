@@ -109,21 +109,9 @@ export type ImageOptions = {
    */
   description: string
   /**
-   * what fileName to use when writing to disk
-   */
-  fileName: string
-  /**
-   * what directory to store image in
-   */
-  fileDir: string
-  /**
-   * what file extension to use (should be `webp` unless you also change sharp conversion)
-   */
-  fileExt: string
-  /**
    * header + body font to be used when generating satori image (as promise to work around sync in component)
    */
-  fontsPromise: Promise<SatoriOptions["fonts"]>
+  fonts: SatoriOptions["fonts"]
   /**
    * `GlobalConfiguration` of quartz (used for theme/typography)
    */

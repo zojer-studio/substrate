@@ -1,8 +1,11 @@
+import { promises as fs } from "fs"
 import { FontWeight, SatoriOptions } from "satori/wasm"
 import { GlobalConfiguration } from "../cfg"
 import { QuartzPluginData } from "../plugins/vfile"
 import { JSXInternal } from "preact/src/jsx"
 import { FontSpecification, ThemeKey } from "./theme"
+import path from "path"
+import { QUARTZ } from "./path"
 
 const defaultHeaderWeight = [700]
 const defaultBodyWeight = [400]
@@ -48,48 +51,55 @@ export async function getSatoriFonts(headerFont: FontSpecification, bodyFont: Fo
   return fonts
 }
 
-// Cache for memoizing font data
-const fontCache = new Map<string, Promise<ArrayBuffer>>()
-
 /**
  * Get the `.ttf` file of a google font
  * @param fontName name of google font
  * @param weight what font weight to fetch font
  * @returns `.ttf` file of google font
  */
-export async function fetchTtf(fontName: string, weight: FontWeight): Promise<ArrayBuffer> {
-  const cacheKey = `${fontName}-${weight}`
-  if (fontCache.has(cacheKey)) {
-    return fontCache.get(cacheKey)!
+export async function fetchTtf(
+  fontName: string,
+  weight: FontWeight,
+): Promise<Buffer<ArrayBufferLike>> {
+  const cacheKey = `${fontName.replaceAll(" ", "-")}-${weight}`
+  const cacheDir = path.join(QUARTZ, ".quartz-cache", "fonts")
+  const cachePath = path.join(cacheDir, cacheKey)
+
+  // Check if font exists in cache
+  try {
+    await fs.access(cachePath)
+    return fs.readFile(cachePath)
+  } catch (error) {
+    // ignore errors and fetch font
   }
 
-  // If not in cache, fetch and store the promise
-  const fontPromise = (async () => {
-    try {
-      // Get css file from google fonts
-      const cssResponse = await fetch(
-        `https://fonts.googleapis.com/css2?family=${fontName}:wght@${weight}`,
-      )
-      const css = await cssResponse.text()
+  // Get css file from google fonts
+  const cssResponse = await fetch(
+    `https://fonts.googleapis.com/css2?family=${fontName}:wght@${weight}`,
+  )
+  const css = await cssResponse.text()
 
-      // Extract .ttf url from css file
-      const urlRegex = /url\((https:\/\/fonts.gstatic.com\/s\/.*?.ttf)\)/g
-      const match = urlRegex.exec(css)
+  // Extract .ttf url from css file
+  const urlRegex = /url\((https:\/\/fonts.gstatic.com\/s\/.*?.ttf)\)/g
+  const match = urlRegex.exec(css)
 
-      if (!match) {
-        throw new Error("Could not fetch font")
-      }
+  if (!match) {
+    throw new Error("Could not fetch font")
+  }
 
-      // fontData is an ArrayBuffer containing the .ttf file data (get match[1] due to google fonts response format, always contains link twice, but second entry is the "raw" link)
-      const fontResponse = await fetch(match[1])
-      return await fontResponse.arrayBuffer()
-    } catch (error) {
-      throw new Error(`Error fetching font: ${error}`)
-    }
-  })()
+  // fontData is an ArrayBuffer containing the .ttf file data
+  const fontResponse = await fetch(match[1])
+  const fontData = Buffer.from(await fontResponse.arrayBuffer())
 
-  fontCache.set(cacheKey, fontPromise)
-  return fontPromise
+  try {
+    await fs.mkdir(cacheDir, { recursive: true })
+    await fs.writeFile(cachePath, fontData)
+  } catch (error) {
+    console.warn(`Failed to cache font: ${error}`)
+    // Continue even if caching fails
+  }
+
+  return fontData
 }
 
 export type SocialImageOptions = {
@@ -161,7 +171,7 @@ export const defaultImage: SocialImageOptions["imageStructure"] = (
   title: string,
   description: string,
   fonts: SatoriOptions["fonts"],
-  _fileData: QuartzPluginData,
+  fileData: QuartzPluginData,
 ) => {
   const fontBreakPoint = 22
   const useSmallerFont = title.length > fontBreakPoint
@@ -177,8 +187,8 @@ export const defaultImage: SocialImageOptions["imageStructure"] = (
         height: "100%",
         width: "100%",
         backgroundColor: cfg.theme.colors[colorScheme].light,
-        gap: "2rem",
-        padding: "1.5rem 5rem",
+        gap: "1rem",
+        padding: "3rem 3rem",
       }}
     >
       <div
@@ -187,31 +197,36 @@ export const defaultImage: SocialImageOptions["imageStructure"] = (
           alignItems: "center",
           width: "100%",
           flexDirection: "row",
-          gap: "2.5rem",
+          gap: "2rem",
         }}
       >
-        <img src={iconPath} width={135} height={135} />
+        <div
+          style={{
+            display: "flex",
+            border: "1px solid red",
+          }}
+        >
+          <img src={iconPath} width={135} height={135} />
+        </div>
         <div
           style={{
             display: "flex",
             color: cfg.theme.colors[colorScheme].dark,
-            fontSize: useSmallerFont ? 70 : 82,
-            fontFamily: fonts[0].name,
-            maxWidth: "70%",
-            overflow: "hidden",
-            textOverflow: "ellipsis",
+            maxWidth: "80%",
           }}
         >
-          <p
+          <h1
             style={{
               margin: 0,
               overflow: "hidden",
               textOverflow: "ellipsis",
               whiteSpace: "nowrap",
+              fontSize: useSmallerFont ? 64 : 72,
+              fontFamily: fonts[0].name,
             }}
           >
             {title}
-          </p>
+          </h1>
         </div>
       </div>
       <div
@@ -221,7 +236,7 @@ export const defaultImage: SocialImageOptions["imageStructure"] = (
           fontSize: 44,
           fontFamily: fonts[1].name,
           maxWidth: "100%",
-          maxHeight: "40%",
+          maxHeight: "60%",
           overflow: "hidden",
         }}
       >
@@ -230,7 +245,7 @@ export const defaultImage: SocialImageOptions["imageStructure"] = (
             margin: 0,
             display: "-webkit-box",
             WebkitBoxOrient: "vertical",
-            WebkitLineClamp: 3,
+            WebkitLineClamp: 5,
             overflow: "hidden",
             textOverflow: "ellipsis",
           }}

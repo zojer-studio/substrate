@@ -4,6 +4,7 @@ import { ProcessedContent } from "../plugins/vfile"
 import { QuartzLogger } from "../util/log"
 import { trace } from "../util/trace"
 import { BuildCtx } from "../util/ctx"
+import chalk from "chalk"
 
 export async function emitContent(ctx: BuildCtx, content: ProcessedContent[]) {
   const { argv, cfg } = ctx
@@ -24,14 +25,18 @@ export async function emitContent(ctx: BuildCtx, content: ProcessedContent[]) {
             emittedFiles++
             if (ctx.argv.verbose) {
               console.log(`[emit:${emitter.name}] ${file}`)
+            } else {
+              log.updateText(`Emitting output files: ${chalk.gray(file)}`)
             }
           }
         } else {
           // Array case
           emittedFiles += emitted.length
-          if (ctx.argv.verbose) {
-            for (const file of emitted) {
+          for (const file of emitted) {
+            if (ctx.argv.verbose) {
               console.log(`[emit:${emitter.name}] ${file}`)
+            } else {
+              log.updateText(`Emitting output files: ${chalk.gray(file)}`)
             }
           }
         }

@@ -6,6 +6,8 @@ import { JSXInternal } from "preact/src/jsx"
 import { FontSpecification, ThemeKey } from "./theme"
 import path from "path"
 import { QUARTZ } from "./path"
+import { formatDate } from "../components/Date"
+import { getDate } from "../components/Date"
 
 const defaultHeaderWeight = [700]
 const defaultBodyWeight = [400]
@@ -173,71 +175,92 @@ export const defaultImage: SocialImageOptions["imageStructure"] = (
   fonts: SatoriOptions["fonts"],
   fileData: QuartzPluginData,
 ) => {
-  const fontBreakPoint = 22
+  const fontBreakPoint = 32
   const useSmallerFont = title.length > fontBreakPoint
   const iconPath = `https://${cfg.baseUrl}/static/icon.png`
+
+  // Format date if available
+  const rawDate = getDate(cfg, fileData)
+  const date = rawDate ? formatDate(rawDate, cfg.locale) : null
+
+  // Get tags if available
+  const tags = fileData.frontmatter?.tags ?? []
 
   return (
     <div
       style={{
         display: "flex",
         flexDirection: "column",
-        justifyContent: "center",
-        alignItems: "center",
         height: "100%",
         width: "100%",
         backgroundColor: cfg.theme.colors[colorScheme].light,
-        gap: "1rem",
-        padding: "3rem 3rem",
+        padding: "2.5rem",
+        fontFamily: fonts[1].name,
       }}
     >
+      {/* Header Section */}
       <div
         style={{
           display: "flex",
           alignItems: "center",
-          width: "100%",
-          flexDirection: "row",
-          gap: "2rem",
+          gap: "1rem",
+          marginBottom: "0.5rem",
         }}
       >
+        <img
+          src={iconPath}
+          width={56}
+          height={56}
+          style={{
+            borderRadius: "50%",
+          }}
+        />
         <div
           style={{
             display: "flex",
-            border: "1px solid red",
+            fontSize: 32,
+            color: cfg.theme.colors[colorScheme].gray,
+            fontFamily: fonts[1].name,
           }}
         >
-          <img src={iconPath} width={135} height={135} />
-        </div>
-        <div
-          style={{
-            display: "flex",
-            color: cfg.theme.colors[colorScheme].dark,
-            maxWidth: "80%",
-          }}
-        >
-          <h1
-            style={{
-              margin: 0,
-              overflow: "hidden",
-              textOverflow: "ellipsis",
-              whiteSpace: "nowrap",
-              fontSize: useSmallerFont ? 64 : 72,
-              fontFamily: fonts[0].name,
-            }}
-          >
-            {title}
-          </h1>
+          {cfg.baseUrl}
         </div>
       </div>
+
+      {/* Title Section */}
       <div
         style={{
           display: "flex",
-          color: cfg.theme.colors[colorScheme].dark,
-          fontSize: 44,
-          fontFamily: fonts[1].name,
-          maxWidth: "100%",
-          maxHeight: "60%",
-          overflow: "hidden",
+          marginTop: "1rem",
+          marginBottom: "1.5rem",
+        }}
+      >
+        <h1
+          style={{
+            margin: 0,
+            fontSize: useSmallerFont ? 64 : 72,
+            fontFamily: fonts[0].name,
+            fontWeight: 700,
+            color: cfg.theme.colors[colorScheme].dark,
+            lineHeight: 1.2,
+            display: "-webkit-box",
+            WebkitBoxOrient: "vertical",
+            WebkitLineClamp: 2,
+            overflow: "hidden",
+          }}
+        >
+          {title}
+        </h1>
+      </div>
+
+      {/* Description Section */}
+      <div
+        style={{
+          display: "flex",
+          flex: 1,
+          fontSize: 36,
+          color: cfg.theme.colors[colorScheme].darkgray,
+          lineHeight: 1.4,
         }}
       >
         <p
@@ -245,13 +268,79 @@ export const defaultImage: SocialImageOptions["imageStructure"] = (
             margin: 0,
             display: "-webkit-box",
             WebkitBoxOrient: "vertical",
-            WebkitLineClamp: 5,
+            WebkitLineClamp: 4,
             overflow: "hidden",
-            textOverflow: "ellipsis",
           }}
         >
           {description}
         </p>
+      </div>
+
+      {/* Footer with Metadata */}
+      <div
+        style={{
+          display: "flex",
+          alignItems: "center",
+          justifyContent: "space-between",
+          marginTop: "2rem",
+          paddingTop: "2rem",
+          borderTop: `1px solid ${cfg.theme.colors[colorScheme].lightgray}`,
+        }}
+      >
+        {/* Left side - Date */}
+        <div
+          style={{
+            display: "flex",
+            alignItems: "center",
+            color: cfg.theme.colors[colorScheme].gray,
+            fontSize: 28,
+          }}
+        >
+          {date && (
+            <div style={{ display: "flex", alignItems: "center" }}>
+              <svg
+                style={{ marginRight: "0.5rem" }}
+                width="28"
+                height="28"
+                viewBox="0 0 24 24"
+                fill="none"
+                stroke="currentColor"
+              >
+                <rect x="3" y="4" width="18" height="18" rx="2" ry="2"></rect>
+                <line x1="16" y1="2" x2="16" y2="6"></line>
+                <line x1="8" y1="2" x2="8" y2="6"></line>
+                <line x1="3" y1="10" x2="21" y2="10"></line>
+              </svg>
+              {date}
+            </div>
+          )}
+        </div>
+
+        {/* Right side - Tags */}
+        <div
+          style={{
+            display: "flex",
+            gap: "0.5rem",
+            flexWrap: "wrap",
+            justifyContent: "flex-end",
+            maxWidth: "60%",
+          }}
+        >
+          {tags.slice(0, 3).map((tag: string) => (
+            <div
+              style={{
+                display: "flex",
+                padding: "0.5rem 1rem",
+                backgroundColor: cfg.theme.colors[colorScheme].highlight,
+                color: cfg.theme.colors[colorScheme].secondary,
+                borderRadius: "10px",
+                fontSize: 24,
+              }}
+            >
+              #{tag}
+            </div>
+          ))}
+        </div>
       </div>
     </div>
   )

@@ -1,3 +1,5 @@
+import readline from "readline"
+
 export class QuartzLogger {
   verbose: boolean
   private spinnerInterval: NodeJS.Timeout | undefined
@@ -16,8 +18,8 @@ export class QuartzLogger {
     } else {
       this.spinnerIndex = 0
       this.spinnerInterval = setInterval(() => {
-        process.stdout.clearLine(0)
-        process.stdout.cursorTo(0)
+        readline.clearLine(process.stdout, 0)
+        readline.cursorTo(process.stdout, 0)
         process.stdout.write(`${this.spinnerChars[this.spinnerIndex]} ${this.spinnerText}`)
         this.spinnerIndex = (this.spinnerIndex + 1) % this.spinnerChars.length
       }, 100)
@@ -32,8 +34,8 @@ export class QuartzLogger {
     if (!this.verbose && this.spinnerInterval) {
       clearInterval(this.spinnerInterval)
       this.spinnerInterval = undefined
-      process.stdout.clearLine(0)
-      process.stdout.cursorTo(0)
+      readline.clearLine(process.stdout, 0)
+      readline.cursorTo(process.stdout, 0)
     }
 
     if (text) {

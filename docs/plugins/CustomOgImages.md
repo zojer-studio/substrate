@@ -107,25 +107,35 @@ export const myImage: SocialImageOptions["imageStructure"] = (...) => {
 > import fs from "fs"
 > import path from "path"
 >
-> const headerFont = joinSegments(QUARTZ, "static", "Newsreader.woff2")
-> const bodyFont = joinSegments(QUARTZ, "static", "Newsreader.woff2")
->
-> export async function getSatoriFont(cfg: GlobalConfiguration): Promise<SatoriOptions["fonts"]> {
->   const headerWeight: FontWeight = 700
->   const bodyWeight: FontWeight = 400
->
->   const [header, body] = await Promise.all(
->     [headerFont, bodyFont].map((font) => fs.promises.readFile(path.resolve(font))),
->   )
->
->   return [
->     { name: cfg.theme.typography.header, data: header, weight: headerWeight, style: "normal" },
->     { name: cfg.theme.typography.body, data: body, weight: bodyWeight, style: "normal" },
+> const newsreaderFontPath = joinSegments(QUARTZ, "static", "Newsreader.woff2")
+> export async function getSatoriFonts(headerFont: FontSpecification, bodyFont: FontSpecification) {
+>   // ... rest of implementation remains same
+>   const fonts: SatoriOptions["fonts"] = [
+>     ...headerFontData.map((data, idx) => ({
+>       name: headerFontName,
+>       data,
+>       weight: headerWeights[idx],
+>       style: "normal" as const,
+>     })),
+>     ...bodyFontData.map((data, idx) => ({
+>       name: bodyFontName,
+>       data,
+>       weight: bodyWeights[idx],
+>       style: "normal" as const,
+>     })),
+>     {
+>       name: "Newsreader",
+>       data: await fs.promises.readFile(path.resolve(newsreaderFontPath)),
+>       weight: 400,
+>       style: "normal" as const,
+>     },
 >   ]
+>
+>   return fonts
 > }
 > ```
 >
-> This font then can be used with your custom structure
+> This font then can be used with your custom structure.
 
 ## Examples
 

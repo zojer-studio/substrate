@@ -2,29 +2,49 @@ import { FontWeight, SatoriOptions } from "satori/wasm"
 import { GlobalConfiguration } from "../cfg"
 import { QuartzPluginData } from "../plugins/vfile"
 import { JSXInternal } from "preact/src/jsx"
-import { ThemeKey } from "./theme"
+import { FontSpecification, ThemeKey } from "./theme"
 
-/**
- * Get an array of `FontOptions` (for satori) given google font names
- * @param headerFontName name of google font used for header
- * @param bodyFontName name of google font used for body
- * @returns FontOptions for header and body
- */
-export async function getSatoriFont(headerFontName: string, bodyFontName: string) {
-  const headerWeight = 700 as FontWeight
-  const bodyWeight = 400 as FontWeight
+const defaultHeaderWeight = [700]
+const defaultBodyWeight = [400]
+export async function getSatoriFonts(headerFont: FontSpecification, bodyFont: FontSpecification) {
+  // Get all weights for header and body fonts
+  const headerWeights: FontWeight[] = (
+    typeof headerFont === "string"
+      ? defaultHeaderWeight
+      : (headerFont.weights ?? defaultHeaderWeight)
+  ) as FontWeight[]
+  const bodyWeights: FontWeight[] = (
+    typeof bodyFont === "string" ? defaultBodyWeight : (bodyFont.weights ?? defaultBodyWeight)
+  ) as FontWeight[]
 
-  // Fetch fonts
-  const [headerFont, bodyFont] = await Promise.all([
-    fetchTtf(headerFontName, headerWeight),
-    fetchTtf(bodyFontName, bodyWeight),
+  const headerFontName = typeof headerFont === "string" ? headerFont : headerFont.name
+  const bodyFontName = typeof bodyFont === "string" ? bodyFont : bodyFont.name
+
+  // Fetch fonts for all weights
+  const headerFontPromises = headerWeights.map((weight) => fetchTtf(headerFontName, weight))
+  const bodyFontPromises = bodyWeights.map((weight) => fetchTtf(bodyFontName, weight))
+
+  const [headerFontData, bodyFontData] = await Promise.all([
+    Promise.all(headerFontPromises),
+    Promise.all(bodyFontPromises),
   ])
 
   // Convert fonts to satori font format and return
   const fonts: SatoriOptions["fonts"] = [
-    { name: headerFontName, data: headerFont, weight: headerWeight, style: "normal" },
-    { name: bodyFontName, data: bodyFont, weight: bodyWeight, style: "normal" },
+    ...headerFontData.map((data, idx) => ({
+      name: headerFontName,
+      data,
+      weight: headerWeights[idx],
+      style: "normal" as const,
+    })),
+    ...bodyFontData.map((data, idx) => ({
+      name: bodyFontName,
+      data,
+      weight: bodyWeights[idx],
+      style: "normal" as const,
+    })),
   ]
+
   return fonts
 }
 

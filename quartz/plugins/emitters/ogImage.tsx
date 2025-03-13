@@ -2,7 +2,7 @@ import { QuartzEmitterPlugin } from "../types"
 import { i18n } from "../../i18n"
 import { unescapeHTML } from "../../util/escape"
 import { FullSlug, getFileExtension } from "../../util/path"
-import { ImageOptions, SocialImageOptions, defaultImage, getSatoriFont } from "../../util/og"
+import { ImageOptions, SocialImageOptions, defaultImage, getSatoriFonts } from "../../util/og"
 import { getFontSpecificationName } from "../../util/theme"
 import sharp from "sharp"
 import satori from "satori"
@@ -54,9 +54,9 @@ export const CustomOgImages: QuartzEmitterPlugin<Partial<SocialImageOptions>> = 
     },
     async *emit(ctx, content, _resources) {
       const cfg = ctx.cfg.configuration
-      const headerFont = getFontSpecificationName(cfg.theme.typography.header)
-      const bodyFont = getFontSpecificationName(cfg.theme.typography.body)
-      const fonts = await getSatoriFont(headerFont, bodyFont)
+      const headerFont = cfg.theme.typography.header
+      const bodyFont = cfg.theme.typography.body
+      const fonts = await getSatoriFonts(headerFont, bodyFont)
 
       for (const [_tree, vfile] of content) {
         // if this file defines socialImage, we can skip

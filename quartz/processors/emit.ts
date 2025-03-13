@@ -20,9 +20,7 @@ export async function emitContent(ctx: BuildCtx, content: ProcessedContent[]) {
         const emitted = await emitter.emit(ctx, content, staticResources)
         if (Symbol.asyncIterator in emitted) {
           // Async generator case
-          const files: string[] = []
           for await (const file of emitted) {
-            files.push(file)
             emittedFiles++
             if (ctx.argv.verbose) {
               console.log(`[emit:${emitter.name}] ${file}`)

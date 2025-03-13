@@ -115,9 +115,7 @@ export const myImage: SocialImageOptions["imageStructure"] = (...) => {
 >   const bodyWeight: FontWeight = 400
 >
 >   const [header, body] = await Promise.all(
->     [headerFont, bodyFont].map((font) => 
->       fs.promises.readFile(path.resolve(font))
->     ),
+>     [headerFont, bodyFont].map((font) => fs.promises.readFile(path.resolve(font))),
 >   )
 >
 >   return [

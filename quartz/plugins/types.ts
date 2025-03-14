@@ -4,7 +4,7 @@ import { ProcessedContent } from "./vfile"
 import { QuartzComponent } from "../components/types"
 import { FilePath } from "../util/path"
 import { BuildCtx } from "../util/ctx"
-import DepGraph from "../depgraph"
+import { VFile } from "vfile"
 
 export interface PluginTypes {
   transformers: QuartzTransformerPluginInstance[]
@@ -33,6 +33,12 @@ export type QuartzFilterPluginInstance = {
   shouldPublish(ctx: BuildCtx, content: ProcessedContent): boolean
 }
 
+export type ChangeEvent = {
+  type: "add" | "change" | "delete"
+  path: FilePath
+  file?: VFile
+}
+
 export type QuartzEmitterPlugin<Options extends OptionType = undefined> = (
   opts?: Options,
 ) => QuartzEmitterPluginInstance
@@ -43,16 +49,17 @@ export type QuartzEmitterPluginInstance = {
     content: ProcessedContent[],
     resources: StaticResources,
   ): Promise<FilePath[]> | AsyncGenerator<FilePath>
+  partialEmit?(
+    ctx: BuildCtx,
+    content: ProcessedContent[],
+    resources: StaticResources,
+    changeEvents: ChangeEvent[],
+  ): Promise<FilePath[]> | AsyncGenerator<FilePath>
   /**
    * Returns the components (if any) that are used in rendering the page.
    * This helps Quartz optimize the page by only including necessary resources
    * for components that are actually used.
    */
   getQuartzComponents?: (ctx: BuildCtx) => QuartzComponent[]
-  getDependencyGraph?(
-    ctx: BuildCtx,
-    content: ProcessedContent[],
-    resources: StaticResources,
-  ): Promise<DepGraph<FilePath>>
   externalResources?: ExternalResourcesFn
 }

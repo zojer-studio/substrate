@@ -11,6 +11,8 @@ type WriteOptions = {
   content: string | Buffer | Readable
 }
 
+type DeleteOptions = Omit<WriteOptions, "content">
+
 export const write = async ({ ctx, slug, ext, content }: WriteOptions): Promise<FilePath> => {
   const pathToPage = joinSegments(ctx.argv.output, slug + ext) as FilePath
   const dir = path.dirname(pathToPage)

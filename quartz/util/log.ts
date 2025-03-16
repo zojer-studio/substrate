@@ -10,7 +10,9 @@ export class QuartzLogger {
   private readonly spinnerChars = ["⠋", "⠙", "⠹", "⠸", "⠼", "⠴", "⠦", "⠧", "⠇", "⠏"]
 
   constructor(verbose: boolean) {
-    this.verbose = verbose
+    const isInteractiveTerminal =
+      process.stdout.isTTY && process.env.TERM !== "dumb" && !process.env.CI
+    this.verbose = verbose || !isInteractiveTerminal
   }
 
   start(text: string) {

@@ -20,6 +20,7 @@ import { Mutex } from "async-mutex"
 import { getStaticResourcesFromPlugins } from "./plugins"
 import { randomIdNonSecure } from "./util/random"
 import { ChangeEvent } from "./plugins/types"
+import { minimatch } from "minimatch"
 
 type ContentMap = Map<
   FilePath,
@@ -117,11 +118,23 @@ async function startWatching(
     })
   }
 
+  const gitIgnoredMatcher = await isGitIgnored()
   const buildData: BuildData = {
     ctx,
     mut,
     contentMap,
-    ignored: await isGitIgnored(),
+    ignored: (path) => {
+      if (gitIgnoredMatcher(path)) return true
+      const pathStr = path.toString()
+      for (const pattern of cfg.configuration.ignorePatterns) {
+        if (minimatch(pathStr, pattern)) {
+          return true
+        }
+      }
+
+      return false
+    },
+
     changesSinceLastBuild: {},
     lastBuildMs: 0,
   }

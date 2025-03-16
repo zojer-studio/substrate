@@ -44,17 +44,17 @@ export type QuartzEmitterPlugin<Options extends OptionType = undefined> = (
 ) => QuartzEmitterPluginInstance
 export type QuartzEmitterPluginInstance = {
   name: string
-  emit(
+  emit: (
     ctx: BuildCtx,
     content: ProcessedContent[],
     resources: StaticResources,
-  ): Promise<FilePath[]> | AsyncGenerator<FilePath>
-  partialEmit?(
+  ) => Promise<FilePath[]> | AsyncGenerator<FilePath>
+  partialEmit?: (
     ctx: BuildCtx,
     content: ProcessedContent[],
     resources: StaticResources,
     changeEvents: ChangeEvent[],
-  ): Promise<FilePath[]> | AsyncGenerator<FilePath>
+  ) => Promise<FilePath[]> | AsyncGenerator<FilePath> | null
   /**
    * Returns the components (if any) that are used in rendering the page.
    * This helps Quartz optimize the page by only including necessary resources

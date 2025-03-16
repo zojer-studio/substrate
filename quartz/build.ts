@@ -9,7 +9,7 @@ import { parseMarkdown } from "./processors/parse"
 import { filterContent } from "./processors/filter"
 import { emitContent } from "./processors/emit"
 import cfg from "../quartz.config"
-import { FilePath, FullSlug, joinSegments, slugifyFilePath } from "./util/path"
+import { FilePath, joinSegments, slugifyFilePath } from "./util/path"
 import chokidar from "chokidar"
 import { ProcessedContent } from "./plugins/vfile"
 import { Argv, BuildCtx } from "./util/ctx"
@@ -173,7 +173,6 @@ async function rebuild(changes: ChangeEvent[], clientRefresh: () => void, buildD
   const perf = new PerfTimer()
   perf.addEvent("rebuild")
   console.log(chalk.yellow("Detected change, rebuilding..."))
-  console.log(changes)
 
   // update changesSinceLastBuild
   for (const change of changes) {
@@ -181,21 +180,17 @@ async function rebuild(changes: ChangeEvent[], clientRefresh: () => void, buildD
   }
 
   const staticResources = getStaticResourcesFromPlugins(ctx)
-  const processedFiles = await Promise.all(
-    Object.entries(changesSinceLastBuild)
-      .filter(([fp, type]) => type !== "delete" && path.extname(fp) === ".md")
-      .map(async ([fp, _type]) => {
-        const fullPath = joinSegments(argv.directory, toPosixPath(fp)) as FilePath
-        const parsed = await parseMarkdown(ctx, [fullPath])
-        parsed.forEach((content) =>
-          contentMap.set(content[1].data.relativePath!, {
-            type: "markdown",
-            content,
-          }),
-        )
-        return parsed
-      }),
-  ).then((results) => results.flat())
+  for (const [fp, type] of Object.entries(changesSinceLastBuild)) {
+    if (type === "delete" || path.extname(fp) !== ".md") continue
+    const fullPath = joinSegments(argv.directory, toPosixPath(fp)) as FilePath
+    const parsed = await parseMarkdown(ctx, [fullPath])
+    for (const content of parsed) {
+      contentMap.set(content[1].data.relativePath!, {
+        type: "markdown",
+        content,
+      })
+    }
+  }
 
   // update state using changesSinceLastBuild
   // we do this weird play of add => compute change events => remove
@@ -226,7 +221,7 @@ async function rebuild(changes: ChangeEvent[], clientRefresh: () => void, buildD
         file,
       }
     }
-    
+
     return {
       type,
       path,
@@ -236,16 +231,19 @@ async function rebuild(changes: ChangeEvent[], clientRefresh: () => void, buildD
   // update allFiles and then allSlugs with the consistent view of content map
   ctx.allFiles = Array.from(contentMap.keys())
   ctx.allSlugs = ctx.allFiles.map((fp) => slugifyFilePath(fp as FilePath))
+  const processedFiles = Array.from(contentMap.values())
+    .filter((file) => file.type === "markdown")
+    .map((file) => file.content)
 
   let emittedFiles = 0
   for (const emitter of cfg.plugins.emitters) {
     // Try to use partialEmit if available, otherwise assume the output is static
-    const emitFn = emitter.partialEmit
-    if (!emitFn) {
+    const emitFn = emitter.partialEmit ?? emitter.emit
+    const emitted = await emitFn(ctx, processedFiles, staticResources, changeEvents)
+    if (emitted === null) {
       continue
     }
 
-    const emitted = await emitFn(ctx, processedFiles, staticResources, changeEvents)
     if (Symbol.asyncIterator in emitted) {
       // Async generator case
       for await (const file of emitted) {

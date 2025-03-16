@@ -19,4 +19,5 @@ export const Static: QuartzEmitterPlugin = () => ({
       yield dest
     }
   },
+  async *partialEmit() {},
 })

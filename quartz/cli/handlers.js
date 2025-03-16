@@ -456,6 +456,7 @@ export async function handleBuild(argv) {
     const paths = await globby([
       "**/*.ts",
       "quartz/cli/*.js",
+      "quartz/static/**/*",
       "**/*.tsx",
       "**/*.scss",
       "package.json",

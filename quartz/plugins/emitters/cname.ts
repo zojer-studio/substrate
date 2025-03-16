@@ -23,4 +23,5 @@ export const CNAME: QuartzEmitterPlugin = () => ({
     await fs.promises.writeFile(path, content)
     return [path] as FilePath[]
   },
+  async *partialEmit() {},
 })

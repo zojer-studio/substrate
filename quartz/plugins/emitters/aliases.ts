@@ -4,7 +4,7 @@ import { write } from "./helpers"
 import { BuildCtx } from "../../util/ctx"
 import { VFile } from "vfile"
 
-async function *processFile(ctx: BuildCtx, file: VFile) {
+async function* processFile(ctx: BuildCtx, file: VFile) {
   const ogSlug = simplifySlug(file.data.slug!)
 
   for (const slug of file.data.aliases ?? []) {

@@ -41,12 +41,12 @@ export const Assets: QuartzEmitterPlugin = () => {
 
         if (changeEvent.type === "add" || changeEvent.type === "change") {
           yield copyFile(ctx.argv, changeEvent.path)
-        } else if (changeEvent.type === 'delete') {
+        } else if (changeEvent.type === "delete") {
           const name = slugifyFilePath(changeEvent.path)
           const dest = joinSegments(ctx.argv.output, name) as FilePath
           await fs.promises.unlink(dest)
-        } 
+        }
       }
-    }
+    },
   }
 }

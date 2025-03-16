@@ -137,17 +137,17 @@ async function startWatching(
     .on("add", (fp) => {
       if (buildData.ignored(fp)) return
       changes.push({ path: fp as FilePath, type: "add" })
-      rebuild(changes, clientRefresh, buildData)
+      void rebuild(changes, clientRefresh, buildData)
     })
     .on("change", (fp) => {
       if (buildData.ignored(fp)) return
       changes.push({ path: fp as FilePath, type: "change" })
-      rebuild(changes, clientRefresh, buildData)
+      void rebuild(changes, clientRefresh, buildData)
     })
     .on("unlink", (fp) => {
       if (buildData.ignored(fp)) return
       changes.push({ path: fp as FilePath, type: "delete" })
-      rebuild(changes, clientRefresh, buildData)
+      void rebuild(changes, clientRefresh, buildData)
     })
 
   return async () => {
@@ -162,6 +162,7 @@ async function rebuild(changes: ChangeEvent[], clientRefresh: () => void, buildD
   const buildId = randomIdNonSecure()
   ctx.buildId = buildId
   buildData.lastBuildMs = new Date().getTime()
+  const numChangesInBuild = changes.length
   const release = await mut.acquire()
 
   // if there's another build after us, release and let them do it
@@ -180,16 +181,19 @@ async function rebuild(changes: ChangeEvent[], clientRefresh: () => void, buildD
   }
 
   const staticResources = getStaticResourcesFromPlugins(ctx)
+  const pathsToParse: FilePath[] = []
   for (const [fp, type] of Object.entries(changesSinceLastBuild)) {
     if (type === "delete" || path.extname(fp) !== ".md") continue
     const fullPath = joinSegments(argv.directory, toPosixPath(fp)) as FilePath
-    const parsed = await parseMarkdown(ctx, [fullPath])
-    for (const content of parsed) {
-      contentMap.set(content[1].data.relativePath!, {
-        type: "markdown",
-        content,
-      })
-    }
+    pathsToParse.push(fullPath)
+  }
+
+  const parsed = await parseMarkdown(ctx, pathsToParse)
+  for (const content of parsed) {
+    contentMap.set(content[1].data.relativePath!, {
+      type: "markdown",
+      content,
+    })
   }
 
   // update state using changesSinceLastBuild
@@ -265,7 +269,7 @@ async function rebuild(changes: ChangeEvent[], clientRefresh: () => void, buildD
 
   console.log(`Emitted ${emittedFiles} files to \`${argv.output}\` in ${perf.timeSince("rebuild")}`)
   console.log(chalk.green(`Done rebuilding in ${perf.timeSince()}`))
-  changes.length = 0
+  changes.splice(0, numChangesInBuild)
   clientRefresh()
   release()
 }

@@ -14,7 +14,15 @@ import {
   drag,
   zoom,
 } from "d3"
-import { Text, Graphics, Application, Container, Circle } from "pixi.js"
+import {
+  Text,
+  Graphics,
+  Application,
+  Container,
+  Circle,
+  isWebGPUSupported,
+  isWebGLSupported,
+} from "pixi.js"
 import { Group as TweenGroup, Tween as Tweened } from "@tweenjs/tween.js"
 import { registerEscapeHandler, removeAllChildren } from "./util"
 import { FullSlug, SimpleSlug, getFullSlug, resolveRelative, simplifySlug } from "../../util/path"
@@ -350,6 +358,11 @@ async function renderGraph(graph: HTMLElement, fullSlug: FullSlug) {
   tweens.clear()
 
   const app = new Application()
+  const graphicsProvider = (await isWebGPUSupported())
+    ? "webgpu"
+    : isWebGLSupported()
+      ? "webgl"
+      : undefined
   await app.init({
     width,
     height,
@@ -357,7 +370,7 @@ async function renderGraph(graph: HTMLElement, fullSlug: FullSlug) {
     autoStart: false,
     autoDensity: true,
     backgroundAlpha: 0,
-    preference: "webgpu",
+    preference: graphicsProvider,
     resolution: window.devicePixelRatio,
     eventMode: "static",
   })

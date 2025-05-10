@@ -1,4 +1,5 @@
 import { concatenateResources } from "../util/resources"
+import { classNames } from "../util/lang"
 import { QuartzComponent, QuartzComponentConstructor, QuartzComponentProps } from "./types"
 
 type FlexConfig = {
@@ -21,11 +22,10 @@ export default ((config: FlexConfig) => {
     const direction = config.direction ?? "row"
     const wrap = config.wrap ?? "nowrap"
     const gap = config.gap ?? "1rem"
-    const displayClass = `${props.displayClass ?? ""} flex-component`
 
     return (
       <div
-        class={`${displayClass}`}
+        class={classNames(props.displayClass, "flex-component")}
         style={`flex-direction: ${direction}; flex-wrap: ${wrap}; gap: ${gap};`}
       >
         {config.components.map((c) => {

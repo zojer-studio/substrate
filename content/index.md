@@ -1,7 +1,7 @@
 ---
 title: welcome to thesubstrate
 ---
-## Metaphysics are cool
+## Metaphysics are pretty cool
 Hi, I'm [[david]], and I like metaphysics. I think about them a lot—in fact, I'm *fixated* on them. I find them everywhere, as if every path leads to Rome; in every situation, I find my attention inevitably pulled to the recurring meta-patterns at play. 
 
 I think about these patterns in every single social interaction; every emotion; even in my dreams—and while this is sometimes to my detriment, every day I find myself settling further into a compounding state of [[Awe]]: which I believe to be the very essence of fulfillment.

@@ -1,0 +1,5 @@
+---
+aliases:
+  - jadedness
+  - trauma
+---

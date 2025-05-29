@@ -5,7 +5,7 @@ My mother sent me a picture with the following text:
 
 I don't even know if it's true or not—but it illustrates a certain *absurdity* that is somehow completely plausible (based on the little I already know).
 
-![[Pasted image 20250528164459.png]]
+![[the_pyramid_spirals.png]]
 *did you see this shit? what the hell is even going on? why? what? huh??*
 
 

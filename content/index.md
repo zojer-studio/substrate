@@ -2,80 +2,36 @@
 title: welcome to thesubstrate
 ---
 ## Metaphysics are cool
-Hi, I'm [[david]], and I like metaphysics. I think about them a lot—in fact, I'm *fixated* on them.  It's like every path leads to Rome; in every situation I find myself in, my attention is inevitably pulled to recurring patterns, patterns that repeat in the most mindblowing of places. 
+Hi, I'm [[david]], and I like metaphysics. I think about them a lot—in fact, I'm *fixated* on them. I find them everywhere, as if every path leads to Rome; in every situation, I find my attention inevitably pulled to the recurring meta-patterns at play. 
 
-I think about patterns in every single social interaction; every emotion; even in my dreams—and while this is sometimes to my detriment, I find myself settling into a compounding state of [[Awe]]: what I believe to be the very essence of fulfillment.
-
-## The substrate
-What is [[the substrate]]? Well, it's this idea that there is some strange *substance* that permeates everything. More specifically, it's a substance that expresses itself both physically and spiritually. It is a flow of energy both infinitely complex and infinitely simple—paradoxically [[Yin]], while at the same time [[Yang]].
-
-Now, I'm aware that this all sounds very 'woo'—which unfortunately has this affect of pushing people away from these concepts.[^1]
-
-But I urge you to consider: Have you ever noticed that everything is waves? Every **'thing'** seems to sit at the intersection point between many different **'spectrums'**.[^2] 
-- **'things'** include: objects, ideas, etc.
-- **'spectrums'** include: masculine & feminine, right & wrong, entropy state, etc.
-
-Maybe I'm biased, but I think this is a pretty profound idea, because it gives our brains scaffolding to try and understand all the strange stuff going on in this universe. I'm of the belief that all of these spectrums are observable—but not always through scientific instruments (blasphemy, I know).[^3] 
+I think about these patterns in every single social interaction; every emotion; even in my dreams—and while this is sometimes to my detriment, every day I find myself settling further into a compounding state of [[Awe]]: which I believe to be the very essence of fulfillment.
 
 ---
-[^1]: [[Samsaras]]
-[^2]: For example: Recently, I have been fascinated by the idea that: [[The two poles of autism are ADHD and OCD]].
-[^3]: Note: there is a recursive pattern here. Each *spectrum* is between two poles, [[Yin]] & [[Yang]]. At the same time, an individual spectrum can be predominantly Yin, or predominantly Yang.
+## The substrate
+What is [[the substrate]]? Well, it's this idea that there is some strange *substance* that permeates through *everything*. More specifically, it's a substance that expresses itself both physically and spiritually. It is a flow of energy both infinitely complex and infinitely simple—paradoxically [[Yin]], while at the same time [[Yang]].
 
-## Two layers: the physical & the spiritual
+Now, I'm aware that this all sounds very 'woo'—which unfortunately has this affect of pushing people away from these concepts.[^1] But I urge you to consider: Have you ever noticed that [[Everything is waves]]? Every **'thing'**[^2] seems to sit at the intersection point between many different **'spectrums'**.[^3] For example: Recently, I have been fascinated by the idea that: [[The two poles of autism are ADHD and OCD]].  It's wild because I promise you, in every single situation—when you break it down to first principles—you will *always* find a spectrum at play.
 
+I'm of the belief that these spectrums are observable—but not always through scientific instruments (blasphemy, I know). Oftentimes, the only way we *can* observe truth is through the subjective experiences of our bodies. For some, this can be a big psychological hurdle, given our culture's obsession with rationality. But frankly, if you keep an open mind, and notice that these waves/spectrums are *everywhere*—it becomes impossible to ignore the underlying tautological logic of the colloquial "subjective." Or, more simply, what we consider to be irrational is, actually, very rational.[^4] 
 
- 
+---
+## What's the use?[^5]
+Ambiguity is uncomfortable to hold. The ego, our differentiating component, reeeally wants to collapse it down into its two poles. This is why people with a 'big ego' are often the least able to handle ambiguity.
 
-
-
-
-
-
-
-
-
-
-##### Unity & Chaos
-There's a paradox here. In one sense, everything is one. Everything is the same thing. But in another sense, everything is unique. Each pattern comes with its own nuances, it's own set of context. There is a bizarre, beautiful, absolutely insane co-existence between infinite unity and infinite chaos—and it is the play between these two forces, [[Yin]] and [[Yang]], that *induces* movement, which we colloquially reference as "life."
-
-You might have trouble with this assertion because it holds a lot of assumptions. But bear with me; what I am describing is something I call [[the substrate]].
-
-##### What's it all for?
-
+But you can practice sitting in the middle. The Taoists call this [[Wu Wei (無為)]]; a state of doing-non-doing. And it is by following your wu wei that you are able to learn the richest lessons life has to offer.
 
 With much help, I've come to discover that [[The purpose of life is to learn lessons]]—and it is from this atomic concept that everything follows suit.
 
+When all this clicks for you, that's where you really get pulled into realizing: there is some real, funky stuff going on in this universe.
 
 
 
 
 
+[^1]: [[Samsaras]]
+[^2]: **'things'** include objects, ideas, etc.
+[^3]: **'spectrums'** include the masculine & feminine, right & wrong, etc.
+[^4]: [[Emotions are rational]]
+[^5]: You can love it, you can leave it / They say you're nothing without it / Don't let them keep you down
 
 
-
-
-
-
-
-
-
-
-
----
-
-In the last few years, my fixation on it has grown exponentially. In every situation I find myself in, when I come to take a step back and observe everything that's happening, 
-
-I've found that there's some kind of *substance* that seems to permeate each and every aspect of existence. From the --, to the archetype patterns that show up over-and-over again.
-
-(sometimes to my detriment)—and I have been so hyperfixated on it that 
-
-
-
-I often find that, in the people I'm surrounded by (read: [[Culture]])
-
-
-There is a common frustration with anyone who engages with the 'woo', because the ideas are often so mindblowing that they become all-consuming. (As a side note, this *pattern* makes it hard for people to engage with these topics.)
-
-
-Every pattern is the same pattern—slightly differentiated by this thing we call consciousness (itself a complex pattern of patterns).

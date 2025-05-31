@@ -1,6 +1,7 @@
 ---
 tags:
   - todo
+  - concepts
 ---
 
 robert charles wilson, in his 2005 novel "[[spin by robert charles wilson|spin]]", asks the question: what if there was a fourth stage of life?

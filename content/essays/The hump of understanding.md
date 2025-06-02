@@ -1,3 +1,7 @@
+---
+date: 2025-05-31
+---
+
 I find over-and-over that there are three levels of understanding:
 1. Student
 2. Over-confident
@@ -5,7 +9,7 @@ I find over-and-over that there are three levels of understanding:
 
 ![[hump-1.png]]
 
-At the first level, you're fresh-eyed and open-minded. You aren't yet bogged down by [[Samsara|expectations]], which means you are simultaneously: unequipped to appropriately handle the situation, yet able to compensate with a learning mentality.
+At the first level, you're fresh-eyed and open-minded. You aren't yet bogged down by [[Expectation|expectations]], which means you are simultaneously: unequipped to appropriately handle the situation, yet able to compensate with a learning mentality.
 
 The second level is where you've now got a bit of experience under your belt. You've been through it enough times where you know what to anticipate, and how to react to it. But a problem starts to arise; the strategies you've learned seem to stop working. Here's what's happened:
 - [[Knowledge]] is *dynamic*.
@@ -19,7 +23,7 @@ I don't think you ever lose knowledge. Even if a learned lesson fails you, it do
 
 ![[hump-2.png]]
 
-What I find interesting is that these humps seem to appear at both a micro- and macro-level. They're [[Fractals|Fractal]]—patterns that repeat themselves, infinitely, all the way up and all the way down. It can apply to a hard skill, just as it applies to the meta-level soft skill. And—I think—with more and more compounding experiences under your belt, you start to find it easier to digest humps across the board. Which is a #clue!
+What I find interesting is that these humps seem to appear at both a micro- and macro-level. They're [[Fractals|Fractal]]—patterns that repeat themselves, infinitely, all the way up and all the way down. It can apply to a hard skill, just as it applies to the meta-level soft skill. And—I think—with more and more compounding experiences under your belt, you start to find it easier to digest humps across the board. Which is a clue!
 
 I believe that pushing past these humps is what life is all about.[^1]  I'll talk about this[^2] in much greater depth later, but each time you digest a hump, you:
 1. Increase physical entropy

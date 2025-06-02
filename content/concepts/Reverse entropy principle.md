@@ -1,4 +1,13 @@
-#todo
+---
+tags:
+  - purpose
+---
+
+So this is an ongoing theory I'm developing. It's kind of weird that there is this irreversible process in which [[Entropy]] can only increase (in a closed system), right? I think there's a clue here, and I think I've landed on a pretty cool idea which helps illustrate what I believe to be our purpose in life.[^1]
+
+This is an ongoing article. It will take me many attempts to communicate this idea. But I haven't ever heard someone connect the dots in this way, and I hope that writing it out will resonate with people who are also thinking about these ideas.
+
+---
 
 Shotgun spread:
 - Entropy in a closed system (the universe) can only increase
@@ -12,3 +21,5 @@ Shotgun spread:
 - Every time we learn a lesson, we lower our spiritual entropy.
 	- This process requires that we increase physical entropy (via physiological pain).
 	- Each lesson folds in on itself, compounding.
+
+[^1]: [[Our purpose in life is to learn lessons]]

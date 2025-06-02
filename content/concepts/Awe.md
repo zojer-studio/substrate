@@ -1,5 +1,3 @@
 ---
-tags:
-  - concepts
-  - todo
+tags: []
 ---

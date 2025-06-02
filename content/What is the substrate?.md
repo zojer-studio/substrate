@@ -1,4 +1,6 @@
-So this is in-progress; I'm trying to figure out how to communicate this all. Here's a first draft:
+So this is in-progress; I'm trying to figure out how to communicate this all.
+
+Here's a first draft:
 
 ---
 ## Metaphysics are pretty cool

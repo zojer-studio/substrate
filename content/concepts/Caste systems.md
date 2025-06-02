@@ -1,0 +1,7 @@
+---
+tags:
+  - hinduism
+---
+
+
+![[castes.png]]

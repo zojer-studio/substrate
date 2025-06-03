@@ -1,0 +1,5 @@
+---
+tags:
+  - tarot
+---
+![[kingofwands.png]]

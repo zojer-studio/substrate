@@ -1,5 +1,3 @@
-
-
 - [[GEMINI]], [[LIBRA]], [[AQUARIUS]]
 - Masculine, extroverted
 - Communication, exchange, curiousity, intelligent

@@ -3,6 +3,8 @@ tags:
   - tarot
 ---
 ![[7_ofwands.png]]
+Fighting off impulses ([[FIRE & WANDS]] connection)
+
 
 | upright                                | reversed                  |
 | -------------------------------------- | ------------------------- |

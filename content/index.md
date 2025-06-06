@@ -5,7 +5,7 @@ Hi, I'm [[david]], and I think metaphysics are cool! I am slowly growing this [[
 
 But for now, you can start here: [[What is the substrate?]] and here: [[Reverse entropy principle]]
 
-Also be sure to check out the dailys!
+Also check out [[Good questions]]!
 
 ![[rainbows-1.jpeg]]
 Tell me, where are we going? / Oh-oh, what's the future showin'? / Oh, where are we headed? / With all that's goin' on where are we gettin'? / Woo

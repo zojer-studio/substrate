@@ -1,4 +1,5 @@
-![[feedingtheelephant.png]]
+![[elephant-simple.png]]
+
 I originally heard about this spread from https://parsifalswheeldivination.org/, but it seems like it's since been taken down.
 
 The general idea is to try and understand what unspoken archetype might be contributing to your conflict with another person. Person A/B represents the energy they're bringing in. The elephant (in the room) describes how those energies clash. The action/reaction slot may be used to describe the way that energy is channeled, through their predispositions. Outside interests can help you understand the trajectory of each person's individual journey. 

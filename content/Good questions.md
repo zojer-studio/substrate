@@ -5,6 +5,7 @@ What makes you, you? What makes you tick? What kinds of things do you notice? Wh
 - do you have any memories of fire? what age, with who, where?
 - in what instances do you like to be perceived?
 - what's your favorite book?
+- what question do you want to be asked?
 
 ### perception-check
 - can you visualize a red apple?

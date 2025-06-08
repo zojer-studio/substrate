@@ -13,17 +13,12 @@ This is no easy feat. My mother, already extremely busy with work (childcare unt
 
 But it wasn't happening fast enough. And rather than give appreciation for the work done so far, he snapped at her, complaining that she hadn't taken all the books out, throwing them all to the floor.
 
-The next morning, I'd caught wind of the anxiety in the room. I went over[^1], and as mum gave me the downlow, he walks in. So the obvious thing to do is boil the water; bring it to the surface, deal with the issue directly, together.
+The next morning, I'd caught wind of the anxiety in the room. I went over[^1], and as mum gave me the downlow[^2], he walks in. So the obvious thing to do is boil the water; bring it to the surface, deal with the issue directly, together.
 
-The major issue that arose was that my brother wanted—no, needed—to know what his wrong was. He needed it cut-and-dry: clearly communicated, definitively laid out. But it's a hard thing to do, especially when you're already stressed out and at max capacity. So here's what I told him:
+The major issue that arose was that my brother wanted—no, needed—to know what his wrong was. He needed it cut-and-dry: clearly communicated, definitively laid out. But it's a hard thing to do, especially when you're already stressed out and at max capacity. So here's what I told him[^3]:
 
----
-
-**It is your responsibility** to figure out your wrongs. You are right to be careful not to make assumptions, and to get the right idea from the other person. But there is a lot of information you can glean by simply sitting, observing, and studying. Mum is not in a position to walk you through her struggles—shit needs to get done, it needs to get done now, and you need to give her that space to do it. 
-
-
----
-related: [[Sitting on the bench]]
-related: [[Mercury-Venus|Mercury ☿ □ Venus ♀]]
+> **It is your responsibility** to figure out your wrongs. You are right to be careful not to make assumptions, and to get the right idea from the other person. But there is a lot of information you can glean by simply sitting, observing, and studying. Mum is not in a position to walk you through her struggles—shit needs to get done, it needs to get done now, and you need to give her that space to do it. 
 
 [^1]: to help move books, I found out
+[^2]: [[Sitting on the bench]]
+[^3]: [[Mercury-Venus|Mercury □ Venus ]]

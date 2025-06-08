@@ -19,3 +19,7 @@ u/No-Court-2969
 > As a person she could be a Taurus
 
 
+u/doomweaver:
+> I think a big nuance that is missed in the Queen of Pentacles is appreciation. As much as she is an earth card, also consider Taurus and Venus. The Queen loves and appreciates that which is beautiful and valuable to her.
+> She's mature enough to know what's important, and wise enough to take the time to "stop and smell the roses" so to speak.
+> Yes, she is "of the earth" but I think of her as less to do with finances (I associate that more with the king) and more to do with being grounded and connected to whatever it is that you value.

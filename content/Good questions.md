@@ -3,8 +3,8 @@ What makes you, you? What makes you tick? What kinds of things do you notice? Wh
 ### s-tier
 - what groceries u been into lately
 - do you have any memories of fire? what age, with who, where?
-- in what instances do you like to be perceived?
 - what's your favorite book?
+- in what instances do you like to be perceived?
 - what question do you want to be asked?
 
 ### perception-check
@@ -17,7 +17,6 @@ What makes you, you? What makes you tick? What kinds of things do you notice? Wh
 - what do you think about designer babies?
 - what's your perspective on recreational drugs?
 - what do you think happens to us when we die?
-- white lies?
 - what does it mean to have a good sense of humor?
 
 ### your internal world
@@ -38,6 +37,7 @@ What makes you, you? What makes you tick? What kinds of things do you notice? Wh
 - what kind of people do you like to make friends with?
 - what's your relationship with social media like?
 - have you ever been in a clique?
+- white lies, yay or nay?
 
 ### influences
 - whats the most out of place you've ever felt?

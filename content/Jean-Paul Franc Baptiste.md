@@ -5,7 +5,7 @@ tags:
 ---
 Okay so this is my dnd character, I'm learning to roleplay
 
-![[Pasted image 20250609002229.png]]
+![[matchi-cayden-riso.png]]
 
 Hail, I'm Jean-Paul Franc Baptiste, a half-elf monk hailing from Monastère Étoilé in Chǎletmont. I've been living with the sages here for about 5 years now; but before enrolling into my cohort, I grew up traveling with mother[^1] on her work trips. Being a very successful sorcerer, her presence is highly sought by temples, academies, and universities. From when I was 9 until I was 14, she would bring me everywhere, and sit me in the library where I would read about the machinations of the multiverse.
 

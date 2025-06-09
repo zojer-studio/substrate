@@ -1,3 +1,4 @@
+#bookreview
 # Review
 spin is an instant classic, and it's not just because the ideas are superbly provoking—but because the events through which they unravel are offered through the most captivating characters I've ever encountered on paper. They aren't particularly clever, nor devious, nor hyperintelligent (although they are intelligent), or even morally intriguing. They don't have the heroism to rally behind, or the heart wrenching horror of betrayal. They just feel... real. They make sense. Grounded, in a way that makes *me* feel whole, complete. They feel human.
 

@@ -38,10 +38,11 @@ What makes you, you? What makes you tick? What kinds of things do you notice? Wh
 - what's your relationship with social media like?
 - have you ever been in a clique?
 - white lies, yay or nay?
+- if you could choose any of your friends (who are a couple), who would you want to raise you? (think about the food they'd make, their emotional intelligence, whether they'd travel, etc.)
 
 ### influences
 - whats the most out of place you've ever felt?
-- were you a good student? How do you think that's impacted the person you are today?
+- were you a good student? how do you think that's impacted the person you are today?
 - if you could divide your life into before and after, what's the event that separates the two?
 - what's the closest you've come to death?
 - did you grow up with parents who wanted you to learn manners? (and what do u think about manners?)

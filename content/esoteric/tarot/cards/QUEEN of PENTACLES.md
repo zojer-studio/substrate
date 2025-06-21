@@ -3,6 +3,12 @@ tags:
   - tarot
 ---
 ![[queenofpentacles.png]]
+
+### One interpretation:
+The queen is grounded. She looks down and sees where her feet meet the earth. You could say that she's not looking at the big picture, because her attention is towards the smaller matters. The day-to-day operations. But you could argue that the big picture doesn't matter; all we have is the present moment, and the Queen of Pentacles is very good at managing what's actually, tangibly, there.
+
+
+### Another interpretation:
 The QUEEN of PENTACLES sits in her garden, gazing lovingly at her posessions. She has grown many a garden, with much success. She's crafty and practical, kind of like a Mackenzie Bezos figure.
 
 She knows what's valuable to her. At the bottom of the card, on the right-hand side, a rabbit is pouncing into the frame, which symbolizes her high energy and fertility. The Queen of Pentacles, therefore, depicts a certain level of success and prosperity. But the rabbit at the bottom cautions us that we should be careful of where we leap when we are chasing that success.

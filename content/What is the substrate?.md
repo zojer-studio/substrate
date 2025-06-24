@@ -11,11 +11,11 @@ the substrate is how I'm conceptualizing this thing we call existence. It's been
 ---
 There's some funky stuff going on. Have you noticed?
 
-Like those moments where everything seems to coalesce. A coincidence here, a "missed" step there. Moments where the stars align, and you find yourself in a better place than you could've even imagined.
+I've found that there are these weird moments where everything seems to coalesce. A coincidence here, a "missed" step there. Moments where the stars align, and you find yourself in a better place than you could've even imagined.
 
-Not everyone is aware of this phenomenon, and some people reject the premise entirely. It's difficult to walk the line of insight and delusion—especially because we (as humans) are hyper-prone to projecting our (limited) experiences onto the world around us.
+Not everyone is aware of this phenomenon ([[Synchronicity]], and some people reject the premise entirely. It's difficult to walk the line of insight and delusion—especially because we (as humans) are hyper-prone to projecting our (limited) experiences onto the world around us.
 
-But the people who get it, get it. People who have realized they're on a journey, tend to embrace it. After all—when you experience a spiritual awakening, there's no going back. And once you've embraced your journey, you'll start to notice that it seems to be taking you somewhere...
+But the people who get it, get it. People who have realized they're on a journey tend to embrace it, because after all—when you experience a spiritual awakening, there's no going back. And once you've embraced your journey, you'll start to notice that it seems to be taking you somewhere...
 
 ### Building a personal model for the universe; A practice in [[Perception]] & [[Accession]]
 ---
@@ -23,15 +23,15 @@ Lately, I've been thinking about my journey as if I'm filling out a library.
 
 > The purpose of life is to learn lessons
 
-As new perceptions (books) enter the hallways, they must be shaped and slotted onto the correct shelf. Some perceptions enter the halls and don't seem to fit. Others infect, rotting through the shelves, throwing the books into disarray.[^6]
+As new perceptions enter the hallways, they must be shaped into books and stored on the correct shelf. Some perceptions enter the halls and don't seem to fit. Others infect, rotting through the shelves, throwing the books into disarray.[^6]
 
-But the really powerful perceptions fit remarkably well. So well, that it's hard to figure out which shelf to put them on. It kind of seems like it could fit on any of them. The reason for this is that this *particular* perception is getting closer to the truth; the pattern is replicable, because you are able to shape it into a «lower entropy state» via lesson after lesson. Lifetime after lifetime.
+But the really powerful perceptions fit remarkably well. So well, that it's hard to figure out which shelf to put them on. It kind of seems like it could fit on any of them! The reason for this is that the perception is getting closer to the truth; the pattern is replicable, because you are able to shape it into a «lower entropy state» via lesson after lesson. Lifetime after lifetime.
 
 ### [[The reverse entropy principle]]
 ---
 Very briefly: There is clearly more to life than what we can put in a physics simulation.
 
-My theory is that there are essentially **two planes of existence**: the spiritual, and the physical *a.k.a. yin/yang*. On the physical layer, entropy can only go up. (Assuming the universe is a closed system.) But on the spiritual layer, entropy can only go down.
+My theory is that there are essentially **two planes of existence**: the spiritual, and the physical. *a.k.a. yin/yang*. On the physical layer, entropy can only go up. (Assuming the universe is a closed system.) But on the spiritual layer, entropy can only go down.
 
 You see, on the physical layer, we have this idea of energy. Kinetic energy, potential energy, etc. Innovation always seems to be about bringing matter into a lower entropy state configuration. Denser packets of energy are, after all, more useful. 
 

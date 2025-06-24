@@ -13,3 +13,5 @@ I haven't experienced good groupchat culture since high school. It's hard to fin
 
 → sub-topic: [[Intimacy]] - unfortunately, I think it can be too much intimacy, as you get older. It really takes knowing someone—and I'm not sure if I simply haven't had that before or if its just... rare, in America in 2025
 
+
+[[You can literally feel peoples energy from the other side of the world]]

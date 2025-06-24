@@ -1,5 +1,7 @@
 ---
 date: 2025-06-03
+tags:
+  - essay
 ---
 Storytime.
 

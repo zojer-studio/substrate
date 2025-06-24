@@ -2,7 +2,7 @@
 date: 2025-06-07
 ---
 
-This is one of the foundations of [[Partnership, and the intimacy of truly living with someone|Partnership]]. When a new ship bands together, it first needs to go through the process of figuring out:
+This is one of the foundations of [[Partnership]]. When a new ship bands together, it first needs to go through the process of figuring out:
 - which functions drain our energy?
 - which functions boost our energy?
 

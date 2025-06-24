@@ -1,8 +1,9 @@
 ---
 date: 2025-05-28
 tags:
-  - "#todo"
+  - essay
 ---
+//TODO
 I was out in the garden earlier, thinking about some dynamics in my personal life (as one does), and had a flash of clarity.
 
 I mask a *lot*.

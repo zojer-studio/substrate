@@ -7,4 +7,4 @@ tags:
 
 
 related:
-[[Partnership, and the intimacy of truly living with someone|partnership]]
+Partnership

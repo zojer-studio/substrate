@@ -4,8 +4,7 @@ tags:
   - lore
 ---
 Okay so this is my dnd character, I'm learning to roleplay
-
-![[matchi-cayden-riso.png]]
+(For the record I haven't yet figured out how to roleplay lol)
 
 Bounjour, I'm Jean-Paul, I'm a half-elf monk from Monastère Étoilé in Chǎletmont. I've been living with the sages here for about 5 years now; but before enrolling into my cohort, I grew up traveling with mother[^1]. I actually used to live on the farm with my twin sister, but that was a long time ago. After the divorce, from when I was 9 until I was 14, mother took me across the land to many temples, academies, and universities for her work trips. She would bring me everywhere, and sit me in the library where I would read about the machinations of the multiverse.
 

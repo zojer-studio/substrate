@@ -58,12 +58,5 @@ What makes you, you? What makes you tick? What kinds of things do you notice? Wh
 
 
 
-
-
-
-
-
-
-
-
-
+---
+tags: 

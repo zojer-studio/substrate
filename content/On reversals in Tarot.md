@@ -2,6 +2,7 @@
 date: 2025-06-03
 tags:
   - tarot
+  - essay
 ---
 
 We generally interpret reversals as the opposite of the card. [^1] This is not a bad way to interpret them. The cards respond to your energy—if that's their shuttle, they can foster strong interpretations.

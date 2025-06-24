@@ -17,9 +17,9 @@ Shotgun spread:
 	- The ego's primary function, biologically, is to distinguish what makes **me** different from the people around me. This is a really useful function, because it essentially allows us to establish productive, working relationships with people. However, if this function becomes addled with cancerous cells, it begins to really get in the way of our capacity to learn lessons.
 	- The ego is intertwined with your sense of security, and when it feels threatened it will put up walls and deflect any pain that challenges its energy.
 	- Life is the process of getting really good at building a healthy ego, or in other words, finding [[Attachment styles|secure attachment]].
-	- [[Our purpose in life is to learn lessons]].
+	- [[The purpose of life is to learn lessons]].
 - Every time we learn a lesson, we lower our spiritual entropy.
 	- This process requires that we increase physical entropy (via physiological pain).
 	- Each lesson folds in on itself, compounding.
 
-[^1]: [[Our purpose in life is to learn lessons]]
+[^1]: [[The purpose of life is to learn lessons]]

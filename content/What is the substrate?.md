@@ -22,7 +22,7 @@ Ambiguity is uncomfortable to hold. The ego, our differentiating component, reee
 
 But you can practice sitting in the middle. The Taoists call this [[Wu Wei (無為)]]; a state of doing-non-doing. And it is by following your wu wei that you are able to learn the richest lessons life has to offer.
 
-With much help, I've come to discover that [[Our purpose in life is to learn lessons]]—and it is from this atomic concept that everything follows suit.
+With much help, I've come to discover that [[The purpose of life is to learn lessons]]—and it is from this atomic concept that everything follows suit.
 
 When all this clicks for you, that's where you really get pulled into realizing: there is some real, funky stuff going on in this universe.
 

@@ -31,6 +31,6 @@ I believe that pushing past these humps is what life is all about.[^1]  I'll tal
 
 Although this process is painful, it seems to be fundamental—and very very good for you. (Which means it's good for the universe, too)[^3]. 
 
-[^1]: [[Our purpose in life is to learn lessons]]
+[^1]: [[The purpose of life is to learn lessons]]
 [^2]: [[Reverse entropy principle]]
 [^3]: [[You are the universe experiencing itself]]

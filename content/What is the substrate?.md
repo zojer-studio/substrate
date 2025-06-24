@@ -1,3 +1,8 @@
+---
+tags:
+  - sapling
+---
+
 Hi – I'm david, and this is my blog about metaphysics. or more accurately, metapatterns.
 
 the substrate is how I'm conceptualizing this thing we call existence. It's been described as God, nature, "The Pattern", etc.—and I've landed on the "substrate". Why? well, for me, it carries the right connotations.

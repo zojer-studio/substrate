@@ -1,1 +1,0 @@
-https://quartz.jzhao.xyz/philosophy

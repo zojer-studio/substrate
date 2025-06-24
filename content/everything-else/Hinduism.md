@@ -1,7 +1,6 @@
 ---
 tags:
-  - hinduism
-  - religion
+  - sapling
 ---
 > [!info] Disclaimer
 > It is very much worth mentioning that you should take my descriptions/perspective of these ancient concepts with a massive grain of salt. I am not a yogi, and I will surely have misunderstood, in some fashion. But, as I put the pieces of the puzzle together, I find that it is okay to temporarily deviate from institutional knowledge. So—I use these concepts to shape the story I'm trying to tell—and am all ears if I've gotten anything wrong.

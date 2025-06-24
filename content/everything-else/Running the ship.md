@@ -1,5 +1,7 @@
 ---
 date: 2025-06-07
+tags:
+  - sapling
 ---
 
 This is one of the foundations of [[Partnership]]. When a new ship bands together, it first needs to go through the process of figuring out:

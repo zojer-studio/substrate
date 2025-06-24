@@ -1,6 +1,5 @@
 ---
-tags:
-  - hinduism
+tags: []
 ---
 //TODO
 

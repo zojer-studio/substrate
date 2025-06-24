@@ -15,4 +15,4 @@ I love my garden of thoughts. I love all the [[Hallways of the mind|hallways]] I
 I don't really think I'm into such a digital lifestyle, but being able to explore those hallways is really appealing to me. Here are a few places I've started:
 
 - [[What is the substrate?]]
-- [[Reverse entropy principle]]\
+- [[Reverse entropy principle]]

@@ -1,6 +1,7 @@
 ---
 tags:
   - purpose
+  - sapling
 ---
 
 So this is an ongoing theory I'm developing. It's kind of weird that there is this irreversible process in which [[Entropy]] can only increase (in a closed system), right? I think there's a clue here, and I think I've landed on a pretty cool idea which helps illustrate what I believe to be our purpose in life.[^1]

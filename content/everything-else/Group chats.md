@@ -2,6 +2,7 @@
 date: 2025-06-23
 tags:
   - parent-topic
+  - seed
 ---
 I haven't experienced good groupchat culture since high school. It's hard to find the time these days, especially when trying to live in the real world around you. but when they're good, they're good
 

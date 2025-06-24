@@ -1,5 +1,7 @@
 ---
 date: 2025-05-29
+tags:
+  - fruit
 ---
 
 The pyramids are so weird, everytime I learn something about them it’s like I have to take a step back because I cannot even begin to comprehend what’s going on with them. 

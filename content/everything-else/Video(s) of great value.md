@@ -1,10 +1,10 @@
 ### Currently
-https://www.youtube.com/watch?v=DwOpQHeWo4c
+
 
 ### Historically
 - [Tickets tickets](https://www.youtube.com/watch?v=HZOYiy7Wfb0&list=PLHJjq5RWSnLfAyGJKaNxtjt9kYuiAGNRV&index=155)
-- [what once was](https://www.youtube.com/watch?v=O-B-BBwfAWU)
 - [slasher's load bearing ficus](https://www.youtube.com/watch?v=ZBgA7hAITow&t=1s)
+- [and this, is my cream](https://www.youtube.com/watch?v=DwOpQHeWo4c)
 - [charles cozsa & his succulent chinese meal:](https://www.youtube.com/watch?v=XebF2cgmFmU)
 	- gentlemen, this, is democracy, manifest
 	- have a look at the head lock here
@@ -20,3 +20,4 @@ https://www.youtube.com/watch?v=DwOpQHeWo4c
 - [That is so pre 9/11.](https://www.youtube.com/watch?v=_Y8MJPdAi3A&list=PLHJjq5RWSnLfAyGJKaNxtjt9kYuiAGNRV&index=35)
 - [You cry](https://www.youtube.com/watch?v=rLvUztp7Iog&list=PLHJjq5RWSnLfAyGJKaNxtjt9kYuiAGNRV&index=55)
 - [people strive to be fantasies of themselves](https://www.youtube.com/watch?v=kcjK9HSFqMs&list=PLHJjq5RWSnLfAyGJKaNxtjt9kYuiAGNRV&index=156)
+- [what once was](https://www.youtube.com/watch?v=O-B-BBwfAWU)

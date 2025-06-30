@@ -1,10 +1,3 @@
-#seed 
-
-
-
-
----
-
 excerpt from [[2025-04-12]]:
 
 obsidian is great because the organization happens as you use it. and the graph is well-positioned to help me use it—except that it's not very useful right now. when i'm on my graph, my aim is to explore my graph. this often means being able to focus in on one idea, then branch out from there.[^1] but the graph right now is **not good**. it is far too bloated, and the controls seem to be aimed more towards aesthetics, than actual functionality.

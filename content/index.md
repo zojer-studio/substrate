@@ -5,7 +5,7 @@ Hi, I'm david, and this is my [garden](https://quartz.jzhao.xyz/philosophy)
 
 - [[Good questions]]
 - [[Good articles]]
-- [[Video(s) of great value]]
+- [[video of great value]]
 
 Current topic: [[Group chats]]
 

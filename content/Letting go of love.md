@@ -8,6 +8,7 @@ It feels so good to be swept away, en route to a place of mythology. How do you 
 
 You try to raise your walls but when you see *them*, they crumble. You meditate, aware of the dynamics playing out in front of your eyes. You see it clearly, but trick yourself into believing—"what if?" It is not so simple to just "let go", because it is not your hand that grips onto them, but rather, your heart. Emotions crash like waves, bpm spiking against your will. Can you control your heart? Can you slow its beat? 
 
+
 The river is fueled by glances and shared understanding. A wavelength shared only by the two of you. Two castles across from each other; it seems only natural to build that bridge. But it's just you building the bridge. And with every beam of wood you place, alone, you demonstrate that they don't need to do the work. You demonstrate that this is a one way street—gates flinging open, energy channeled without the slightest bit of work.
 
 You see, this is no basis for a relationship. There is no [[Teamwork|teamwork]] at play here. It is the most difficult thing in the world to put the beam of wood down. To take a second to breathe, lean against the wall, and look at your handiwork. And what makes it difficult is the river that flows at your back—pushing you along, to the point where it seems like no effort for you at all. Seeing that bridge take shape is exciting.

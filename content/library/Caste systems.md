@@ -1,6 +1,4 @@
 ---
 tags: []
 ---
-//TODO
-
 ![[castes.png]]

@@ -1,6 +1,6 @@
 ### Currently
 - [charles dozsa's succulent chinese meal:](https://www.youtube.com/watch?v=XebF2cgmFmU)
-	- gentlemen, this, is democracy, manifest
+	- gentlemen, this, is, democracy, manifest
 	- have a look at the head lock here
 	- see that bloke with the headlo—GET YOUR HAND OFF MY PENIS
 	- THIS IS the bloke whose got me on the penis peopppleeeee^eee

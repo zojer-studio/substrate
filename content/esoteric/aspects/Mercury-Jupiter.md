@@ -1,6 +1,8 @@
 ---
 aliases:
-  - Jupiter-Mercury
-inner: "[[Mercury]]"
-outer: "[[Jupiter]]"
+  - JUPITER-MERCURY
+inner: "[[MERCURY]]"
+outer: "[[JUPITER]]"
+tags:
+  - astrology
 ---

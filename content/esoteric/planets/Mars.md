@@ -2,4 +2,5 @@
 aliases:
   - ♂
   - Mars ♂
+  - Mars
 ---

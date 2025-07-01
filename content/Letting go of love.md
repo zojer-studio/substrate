@@ -1,3 +1,9 @@
+---
+date: 2025-06-29
+tags:
+  - essay
+---
+
 What do you do, when you love someone who doesn't love you back? What do you do when you see a glimmer in their eye—a chance, a possibility, a potential? A jolt runs through you everytime your eyes touch. You feel it in your chest, in your groin, in your soul. And surely, they do too.
 
 How could someone turn away from such ambrosia? Why won't they drink from its cup, as do you? What is it they fear?

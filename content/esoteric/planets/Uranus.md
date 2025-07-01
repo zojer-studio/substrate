@@ -2,4 +2,5 @@
 aliases:
   - ♅
   - Uranus ♅
+  - Uranus
 ---

@@ -2,4 +2,5 @@
 aliases:
   - ☽
   - Moon ☽
+  - Moon
 ---

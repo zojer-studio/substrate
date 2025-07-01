@@ -2,4 +2,5 @@
 aliases:
   - ♇
   - Pluto ♇
+  - Pluto
 ---

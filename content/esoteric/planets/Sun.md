@@ -2,6 +2,7 @@
 aliases:
   - ☉
   - Sun ☉
+  - Sun
 ---
 The Sun is one of the most important planets in our chart. It represents us—the self, the identity, etc.—but this breadth can make it a bit hard to interpret. All the other planets represents components within ourselves. What component, then, is the Sun?
 

@@ -2,4 +2,5 @@
 aliases:
   - ♆
   - Neptune ♆
+  - Neptune
 ---

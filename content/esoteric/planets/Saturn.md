@@ -2,4 +2,5 @@
 aliases:
   - ♄
   - Saturn ♄
+  - Saturn
 ---

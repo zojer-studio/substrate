@@ -2,4 +2,5 @@
 aliases:
   - ☿
   - Mercury ☿
+  - Mercury
 ---

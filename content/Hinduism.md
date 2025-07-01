@@ -6,7 +6,7 @@ tags:
 > It is very much worth mentioning that you should take my descriptions/perspective of these ancient concepts with a massive grain of salt. I am not a yogi, and I will surely have misunderstood, in some fashion. But, as I put the pieces of the puzzle together, I find that it is okay to temporarily deviate from institutional knowledge. So—I use these concepts to shape the story I'm trying to tell—and am all ears if I've gotten anything wrong.
 
 ## What even is Hinduism?
-*Written on [[2025-06-01]]*
+*Written on [[I have been feeling sexy as of late]]*
 There are so many cool concepts in Hinduism. Of all the established religions—if you're trying to understand what is going on in this thing we call existence, *this* seems to be the place to truly dive deep.
 
 The thing about Hinduism is that it's not just one thing. It's not like [[Christianity]], where there is one source of truth (the bible) and interpretations that follow suit. Hinduism is a vast collection of beliefs, philosophies, and practices. It is more like a way of life. And I think the way to approach is to understand the concepts involved.

@@ -6,3 +6,4 @@ outer: "[[URANUS]]"
 tags:
   - astrology
 ---
+With Jupiter representing expansiveness, and Uranus representing

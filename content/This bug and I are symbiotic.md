@@ -1,11 +1,11 @@
-#daily 
-## This bug and I are symbiotic
+---
+date: 2025-06-08
+---
 I can feel his energy, he just wants attention lol. He knows I'm a living creature, and we interact with that shared understanding. It kind of makes me feel like a parent. He wants attention. I find him fascinating.
 
 (He's cleaning himself rn. Now, he's crawling around on my screen.)
 
 ![[lil_bug_friend.jpeg]]
-
 
 He can feel gravity (you can see it in his limbs), so I must help him get to his destination (my face). Only, I don't want him to *get* to his destination—I just want to aid him on his quest.
 

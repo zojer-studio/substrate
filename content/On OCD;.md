@@ -1,4 +1,4 @@
-**Important:** Please read [[There is no better, there is only further]], as prerequisite to this article.
+Please read [[There is no better, there is only further]]
 
 ---
 

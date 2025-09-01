@@ -1,6 +1,7 @@
 ---
 date: 2025-05-31
-tags: []
+tags:
+  - essay
 ---
 
 I find over-and-over that there are three levels of understanding:
@@ -13,9 +14,9 @@ I find over-and-over that there are three levels of understanding:
 At the first level, you're fresh-eyed and open-minded. You aren't yet bogged down by [[Expectation|expectations]], which means you are simultaneously: unequipped to appropriately handle the situation, yet able to compensate with a learning mentality.
 
 The second level is where you've now got a bit of experience under your belt. You've been through it enough times where you know what to anticipate, and how to react to it. But a problem starts to arise; the strategies you've learned seem to stop working. Here's what's happened:
-- [[Knowledge]] is *dynamic*.
+- Knowledge is *dynamic*.
 - Although the core truth underlying it is constant, the framing is not—and will fail as new, conflicting situations arise.
-- At first, you don't even notice that your "knowledge" is failing you. Up until this point, it's worked pretty well—and your [[Ego|overconfidence]] blinds you.
+- At first, you don't even notice that your "knowledge" is failing you. Up until this point, it's worked pretty well—and your overconfidence blinds you.
 - Then, you start to question yourself, your own self-worth. You start to feel the imposter syndrome. And as a result, life gets much more difficult; uncomfortable; painful. 
 
 It's not until you recognize this dynamic; humble yourself; and re-adopt a learning mentality that you can master knowledge and disseminate it to others. The lessons you learn from one situation don't always apply to another. You *have* to update your understanding if you want to stay fresh.

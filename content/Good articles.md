@@ -7,6 +7,7 @@
 - [Range: The Case for Generalists in a Specialized World](https://medium.com/@basploeg/range-the-case-for-generalists-in-a-specialized-world-b0ed44bc0470) by Bas Ploeg[^1]
 - [Forgotten Songs: Shinzo no Tobira](https://www.undertheradarmag.com/blog/forgotten_songs_young_magics_isaac_emmanuel_on_mariahs_shinzo_no_tobira/) by Isaac Emmanuel[^2]
 - [Agentic computing](https://jzhao.xyz/posts/agentic-computing) by jzhao.xyz
+- [Minding Time: Chronos, Kairos, and Aion in an Archetypal Cosmos](https://footnotes2plato.com/2015/05/15/minding-time-chronos-kairos-and-aion-in-an-archetypal-cosmos/) by Matthew David Segall
 
 [^1]: This is a blog summary of David Epstein's book of the same name.
 [^2]: I liked this article so much, I made a backup in case it ever goes down: [[Shinzo no Tobira]]

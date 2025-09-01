@@ -1,5 +1,0 @@
----
-tags:
-  - archived
----
-![[castes.png]]

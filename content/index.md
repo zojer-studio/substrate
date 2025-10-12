@@ -1,14 +1,8 @@
 ---
 title: welcome to thesubstrate
 ---
-For every action, there is an equal and opposite reaction. But what about for entropy?
+There's something funky going on with the universe. Have you noticed the coincidences?
 
-![[in-rainbows.jpeg]]
+![[disobey-entropy-right.png]]
 
-
-
----
-### Sidebar:
-- [[Good questions]]
-- [[Good articles]]
-- [[video(s) of great value]]
+[[The ending of Anathem is perfect]]

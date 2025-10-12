@@ -5,4 +5,9 @@ There's something funky going on with the universe. Have you noticed the coincid
 
 ![[disobey-entropy-right.png]]
 
-[[The ending of Anathem is perfect]]
+Where to start:
+- [[Reverse entropy principle]]
+- [[Good questions]]
+- [[The ending of Anathem is perfect]]
+- [[On reversals in Tarot]]
+- [[It is your responsibility to listen, understand]]

@@ -9,3 +9,5 @@
 - [You cry](https://www.youtube.com/watch?v=rLvUztp7Iog&list=PLHJjq5RWSnLfAyGJKaNxtjt9kYuiAGNRV&index=55)
 - [people strive to be fantasies of themselves](https://www.youtube.com/watch?v=kcjK9HSFqMs&list=PLHJjq5RWSnLfAyGJKaNxtjt9kYuiAGNRV&index=156)
 - [what once was](https://www.youtube.com/watch?v=O-B-BBwfAWU)
+- [Advanced Astrology.... for beginners: a crash course in practical astrology](https://www.youtube.com/watch?v=efz5PDdEK_c)
+- [Double Pendulums are Chaoticn't](https://www.youtube.com/watch?v=dtjb2OhEQcU)

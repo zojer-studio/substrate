@@ -4,17 +4,17 @@ I was introduced to the idea of empire at North Star Campout, where @aiden_wacht
 
 Empire seeks to *conquer*, and it does so through *homogenization*. Here's how it goes: every archetype wants to expand its influence. Animals have sex to spread their genes. Humans share ideas in hopes that those ideas will spread to others. Empire finds diversity, and forces it to conform. 
 
-When empire colonizes a new environment, it manipulates people into rejecting their culture, and converting to the empire. Some examples:
+When empire colonizes a new environment, it manipulates people into rejecting their culture, and converting to the empire's culture. Some examples:
 - The [American Indian boarding schools](https://en.wikipedia.org/wiki/American_Indian_boarding_schools), whose objective was to "civilize" or assimilate Native American children into Anglo-American culture. In the process, it forced them to give up their languages, traditions, and *diversity*.
 - **Consumerism** promises comfort in exchange for your *diversity*. It provides a frictionless experience that convinces people to give up their old ways. We can observe this through clothing--all across the world, people have given up traditional garments for t-shirts.
 - **Empiricism** asserts that truth can only be found via measurable changes in the material world. There is only one way to find truth, and it is in the scientific method. Even if alternative, immeasurable methods arrive at the same conclusion—or even *enhance* said conclusion—their "subjective" nature leads to a rejection of their validity.
 - The **insurance industry** simplifies people's complex experiences into a flowchart.
 - **Capitalism** convinces people that the purpose of life is to generate profit. I.e., effort is only valuable if it generates more value than what's been put in. This has homogenized the scope of livelihoods—if you don't "contribute" to the profit machine, then you are selfishly refusing to contribute to the community, and should be exiled as a result.
-- **Monotheism** presents the idea of "one true god". In this, it lambasts alternative descriptions of god by labeling them as heresy. Although religion is an extremely effective scaffolding that helps people connect with their spirituality, it tricks them into believing that other forms of scaffolding lead to different experiences.
-- **Concrete** (1) smothers the existing ecosystem, and (2) destroys our joints. By destroying our joints, it destroys our mobility. It makes us depend on cushioned shoes and mechanical forms of transportation. It pushes us into sedentary lifestyles, which further degrades our mobility. 
-- **Cancel culture** has streamlined ethics into absolute statements. It polices people's belief systems through moral purity tests. Certain lines of questioning have become taboo, because they are associated with the worst of the worst.
+- **Monotheism** presents the idea of "one true god". In this, it lambasts alternative descriptions of god by labeling them as heresy. Although religion is an extremely effective scaffolding that helps people connect with their spirituality, it tricks them into believing that other forms of scaffolding lead to different ends.
+- **Concrete** destroys our joints. By destroying our joints, it destroys our mobility. It makes us depend on cushioned shoes and mechanical forms of transportation. It pushes us into sedentary lifestyles, which further degrades our mobility. (Sidenote: it also somethers the existing ecosystem, which is a whole thing.)
+- **Cancel culture** has streamlined ethics into absolute statements. It polices people's belief systems through moral purity tests. Certain lines of questioning have become taboo, because they are associated with the worst of the worst. In other words, it has reduced people's ability to hold two "opposing" statements in their mind at the same time.
 
-It gets interesting when you combine them together. For example, the capitalist view is reinforced by the empirical view; if your contributions are spiritual in nature, they are immeasurable and therefore not deserving of compensation. These combinations thus weave a complex web that seems almost unbreakable.
+It gets interesting (and scary) when you combine them together. For example, the capitalist view is reinforced by the empirical view; if your contributions are spiritual in nature, they are immeasurable and therefore not deserving of compensation. These combinations thus weave a complex web that seems almost unbreakable.
 
 ## Waging increasingly advanced warfare
 

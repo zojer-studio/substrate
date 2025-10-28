@@ -1,5 +1,7 @@
 ### Currently:
 - [Bipolar and Astrology](https://www.jessicaadams.com/2018/04/21/blog/bipolar-and-astrology/) by Jessica Adams
+- [White Culture Has No Culture](https://christianortiz.substack.com/p/white-culture-has-no-culture-what?r=1p3qjf&utm_medium=ios&triedRedirect=true) by Christian Ortiz
+- [Neptune in Aries](https://jessicadavidson.co.uk/2021/06/21/neptune-in-aries-pioneering-visions-and-tilting-at-windmills/) by Jessica Davidson
 
 ### Historically
 - [A Grand Experiment in Parenthood and Friendship](https://www.theatlantic.com/family/archive/2025/05/raising-kids-friends-parenting/682756/) by Rhaina Cohen

@@ -1,6 +1,6 @@
 > Empire is synonymous with monoculture, because that is how it reproduces. It layers on top of what is already there, and smothers—like a pillow across your face.
 
-I was introduced to the idea of empire at North Star Campout, where @aiden_wachter gave a talk on his perspective on wtf is wrong with our world today. Basically, he made the case that empire is the (living) archetype responsible for all the fucking gunk that comes with capitalism, colonialism, patriarchy, etc. It's the blatant disregard for peoples value. It's the way elon musk says most people are NPCs. It's a pattern that once you take note of, you'll find it *everywhere*—both big and small.
+I was introduced to the idea of empire at North Star Campout, where @aiden_wachter gave a talk on his perspective on wtf is wrong with our world today. Basically, he made the case that empire is the (living) archetype responsible for all the fucking gunk that comes with capitalism, colonialism, patriarchy, etc. It's the blatant disregard for peoples sovereignity. It's the way elon musk says most people are NPCs. It's a pattern that once you take note of, you'll find it *everywhere*—both big and small.
 
 ## The destruction of diversity
 
@@ -16,11 +16,16 @@ When empire colonizes a new environment, it manipulates people into rejecting th
 - **Concrete** destroys our joints. By destroying our joints, it destroys our mobility. It makes us depend on cushioned shoes and mechanical forms of transportation. It pushes us into sedentary lifestyles, which further degrades our mobility. (Sidenote: it also somethers the existing ecosystem, which is a whole thing.)
 - **Cancel culture** has streamlined ethics into absolute statements. It polices people's belief systems through moral purity tests. Certain lines of questioning have become taboo, because they are associated with the worst of the worst. In other words, it has reduced people's ability to hold two "opposing" statements in their mind at the same time.
 
-It gets interesting (and scary) when you combine them together. For example, the capitalist view is reinforced by the empirical view; if your contributions are spiritual in nature, they are immeasurable and therefore not deserving of compensation. These combinations thus weave a complex web that seems almost unbreakable.
+It gets interesting (and scary) when you combine these mechanisms together. For example, the capitalist view is reinforced by the empirical view; if your contributions are spiritual in nature—because those contributions are immeasurable in shared quantitites, they are there therefore "not deserving" of compensation. Combinations like this weave an incredibly complex web that makes it harder and harder to break free of. Resistance always gets smothered, because movements are not able to build up enough momentum without being absorbed into the web. Holes get patched instantly, stronger than they were before, and the entropy is provided through their continued assimilation. So in that sense, **empire relies on infinite growth to maintain its strength.**
+
+> Capital has the ability to subsume all critiques into itself. Even those who would *critique* capital end up *reinforcing* it instead.
+> – Joyce Messier, Ultraliberal, Disco Elysium
 
 ## Waging increasingly advanced warfare
 
-The throughline mechanic you'll find in each of these examples is that: by assimilating someone into its monoculture, it turns that someone into an agent that perpetuates its influence. E.g. missionaries are people whose spirituality has been hijacked; their desire to "spread the good word" comes from a loving place, but their execution destroys diversity in the process.
+The throughline mechanic you'll find in each of these examples is that: by assimilating someone into its monoculture, it turns that someone into an agent, who then perpetuates monoculture. An easy example is a missionary. A well-intentioned person who's spirituality has been hijacked. In their desire to "spread the good word", they smother the same words, but repeated in a different languages. 
+
+
 
 Over time, it has gotten *really* good at conquest. Feudalism More to the point, we find ourself 
 

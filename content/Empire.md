@@ -5,15 +5,19 @@ Over the past sixth months, I have been developing a thesis that explains the or
 
 I was introduced to the idea of empire at North Star Campout, where @aiden_wachter gave a talk on his perspective on wtf is wrong with our world today. Basically, he made the case that empire is the (living) archetype responsible for all the fucking gunk that comes with capitalism, colonialism, patriarchy, etc. It's the blatant disregard for peoples sovereignity. It's the way elon musk says most people are NPCs. It's a pattern that once you take note of, you'll find it *everywhere*—both big and small.
 
+But before we get into it, I would like to highlight something very important. Though the situation we find ourselves seems bleak, this is an incredible time to be optimistic. We are not only witnessing the unraveling of empire, but have the opportunity to contribute to its downfall, and build a better world.
+
+The purpose of this essay is not to scare you, but to equip you with knowledge. Yes, there is a mountain ahead of us. But the hardest thing any of us can do is to simply turn and face it. You might find that by doing the hard thing and looking it in the eye—you've already fought half the battle.
+
 ## Chapter 1: The destruction of diversity
 ---
 So what the hell is this thing called "empire"?
 
-Empire is an archetype that seeks to *conquer*, and it does so through *homogenization*. Here's how it goes: every archetype wants to expand its influence. Animals have sex to spread their genes. Humans share ideas in hopes that those ideas will spread to others. Empire finds *things* outside its grasp, and forces them to conform—stripping away their diversity. 
+Empire is an archetype that seeks to *conquer*, and it does so through *homogenization*. Here's how it goes: every archetype wants to expand its influence. Animals have sex to spread their genes. Humans share ideas in hopes that those ideas will spread to others. Empire finds *things* outside its grasp, and forces them to conform—stripping away their diversity.
 
 When empire colonizes a new environment, it manipulates people into rejecting their culture, and in turn converting to the empire's culture. Some examples:
 - **Colonialism** invades a culture to extract its wealth, until all that remains is a husk of its former glory. The diversity of a culture becomes commodified, as its roots are severed and its core is transformed into an offshoot of the monoculture.
-	- E.g. the [American Indian boarding schools](https://en.wikipedia.org/wiki/American_Indian_boarding_schools), whose objective was to "civilize" or assimilate Native American children into Anglo-American culture. In the process, it forced them to give up their languages, traditions, and *diversity*. 
+	- E.g. the [American Indian boarding schools](https://en.wikipedia.org/wiki/American_Indian_boarding_schools), whose objective was to "civilize" or assimilate Native American children into Anglo-American culture. In the process, it forced them to give up their ancestral languages, traditions, and *diversity*. 
 - **Consumerism** promises comfort in exchange for your *diversity*. It provides a frictionless experience that convinces people to give up their old ways. We can observe this through clothing--all across the world, people have given up traditional garments for t-shirts.
 - **Empiricism** asserts that truth can only be found via measurable changes in the material world. There is only one way to find truth, and it is in the scientific method. Even if alternative, immeasurable methods arrive at the same conclusion—or even *enhance* said conclusion—their "subjective" nature leads to a rejection of their validity.
 - **Capitalism** convinces people that the purpose of life is to generate profit. I.e., effort is only valuable if it generates more value than what's been put in. This has homogenized the scope of livelihoods—if you don't "contribute" to the profit machine, then you are selfishly refusing to contribute to the community, and should be exiled as a result.
@@ -54,22 +58,29 @@ Just like Robin, each of us is faced with an impossible dilemma. How are we to g
 
 In the establishment of **global (western) civilzation**, we are presented with no alternative. For if we as individuals refuse to generate profit, the community will leave us behind without the means to feed, clothe, and house ourselves. You cannot leave the Empire, because there is nothing outside it to sustain yourself. It has subsumed all, and as such, acts of absolute resistance are futile. You have *no option* but to be its agent—because if you do not contribute, you will die.
 
-## Chapter 4: The suppression of spirituality; i.e., The Unconscious
----
-The picture this paints is pretty fucking bleak. It seems like there's no way out—which is the very reason we are collectively consumed by anxiety and depression: products of **nihilism**.
+## Chapter 4:  The colonization of the nervous system
+The picture this paints is bleak, but interestingly enough, that picture itself is an agent of Empire. Can you figure out why?
 
-In 2025, we find ourselves 
+Just as peasants were held in place by "knights in shining armor", we today are held in place by nihilism: a highly sophisticated tool that has colonized the deepest part of our psyche: the nervous system.
 
-It enters an environment, takes advantage of its loving/welcoming nature, then strips the environment of any and all diversity. By destroying diversity, 
+You've probably heard people talk about how the greatest resource at your disposal is your attention. In 2025, each-and-every one of us are intimately familiar with the way in which our attention can be hijacked. Gamification and frictionless UI grip your dopaminergic system with the promise of novelty. The screen sucks you in for hours at a time while your body rots lifelessly in bed. And most pertinently, it conditions you to follow rote patterns. 
 
+> **The analogy of the toboganning hill**
+> Picture in your head a fresh hill of snow. You sit in a sled at the top—and as you slide down, you can lean this way and that. You can choose where to go! But the next time you go down, you'll find that the path you made. It's not very deep, so you can still control your sled—but each time you go down that path, the groove gets more-and-more defined. And before you know it, the path will have become so rigid that it takes an x-games maneuver to forge a new path.
 
+Big tech wants you to predictable. It wants to turn you into a flow chart: if it can simplify you, it can condition you. 
 
-It hijacked people's sense of good and bad through the idea of **morality**.
+The thing to take note of here is that this conditioning happens over many, many microinteractions.  conditions you by loading you up with baggage. It makes you jaded—assuming the worst in every past interaction that resembles the one in front of you now. And—as we all know—it is most effective when it is able to take advantage of our emotions.
 
-Capitalism hijacks people's sense of practicality through the idea of **empiricism**, and it is here where we find ourselves today.
+As people use specific vernacular to illustrate their point, those words get used repeatedly and become synonymous with an agenda, rather than the underlying idea it represents.
 
-## Chapter 4: Language
+This has the effect of making certain language taboo, and therefore robs people of the ability to actually talk about the idea itself. The very idea is boiled down  and loses all meaning.
 
+What we are seeing here is the same archetypical pattern of Empire, which homogenizes and kills off diversity. What better way to stop the exchange and evolution of ideas than to block them from being talked about, at all?
+
+What I find most impressive is how pervasive, and equally undiagnosed this issue has become. The very people who champion either free speech or diversity shut it down, the instant it peeks its head. And as such, we become agents that perpetuate monoculture—even as if stares us in the face from the other side.
+
+## Chapter 5: Policing language = policing ideas
 
 > "This is how colonialism works. It convinces us that the fallout from resistance is entirely our fault, that the immoral choice is resistance itself rather than the circumstances that demanded it."
 > R.F. Kuang, Babel
@@ -85,10 +96,26 @@ Capitalism hijacks people's sense of practicality through the idea of **empirici
 Embrace diverse language - we're all talking about the same thing, we're just speaking in different languages. The closer we can come to realize that, the closer we can come to the ideal prisoners dilemma -- work together, at every step of the way
 
 
+## Chapter 6: Unsuppressing spirituality; i.e. The Unconscious
+---
+The picture this paints is pretty fucking bleak. It seems like there's no way out—which is the very reason we are collectively consumed by anxiety and depression: products of **nihilism**.
+
+In 2025, we find ourselves at what I consider to be the furthest reaches of what Empire is able to subsume.
+
+It enters an environment, takes advantage of its loving/welcoming nature, then strips the environment of any and all diversity. By destroying diversity, 
 
 
 
-## Chapter 6: Its breaking point; Maximum entropy in a closed system
+It hijacked people's sense of good and bad through the idea of **morality**.
+
+Capitalism hijacks people's sense of practicality through the idea of **empiricism**, and it is here where we find ourselves today.
+
+
+
+
+
+
+## Chapter 7: The breaking point; Maximum entropy in a closed system
 
 But we have reached a point in society where empire doesn't have much further to go. It has conquered our nervous systems; where can it go next? 
 
@@ -110,6 +137,6 @@ But at every step of the way, resistance has grown.
 > R.F. Kuang — *Babel, or the Necessity of Violence*
 
 
-## Chapter 7: The prisoner's dilemma
+## Afterward: The prisoner's dilemma
 
 
